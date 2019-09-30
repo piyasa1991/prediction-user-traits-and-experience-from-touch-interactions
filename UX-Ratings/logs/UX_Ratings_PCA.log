@@ -1,0 +1,200 @@
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:Reading the file from:../datasets/files_generated/UX/study1_features_data_out_mahalanobis_transformedDistributions.csv
+INFO:root:Best params: {'fit_intercept': False, 'normalize': True}
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:Reading the file from:../datasets/files_generated/UX/study1_features_data_out_mahalanobis_transformedDistributions.csv
+INFO:root:Best params: {'fit_intercept': True, 'normalize': False}
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Linear regression with stochastic gradient descent****************
+INFO:root:Prediction for PQ
+INFO:root:Reading the file from:../datasets/files_generated/UX/study1_features_data_out_mahalanobis_transformedDistributions.csv
+INFO:root:Best params: {'eta0': 0.001, 'max_iter': 20, 'penalty': None}
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:Reading the file from:../datasets/files_generated/UX/study1_features_data_out_mahalanobis_transformedDistributions.csv
+INFO:root:Best params: {'eta0': 0.01, 'max_iter': 50, 'penalty': None}
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Lasso Regression****************
+INFO:root:Prediction for PQ
+INFO:root:Reading the file from:../datasets/files_generated/UX/study1_features_data_out_mahalanobis_transformedDistributions.csv
+INFO:root:Best params: {'alpha': 0.10481131341546852}
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:Reading the file from:../datasets/files_generated/UX/study1_features_data_out_mahalanobis_transformedDistributions.csv
+INFO:root:Best params: {'alpha': 0.2682695795279725}
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Elastic Net Regression****************
+INFO:root:Prediction for PQ
+INFO:root:Reading the file from:../datasets/files_generated/UX/study1_features_data_out_mahalanobis_transformedDistributions.csv
+INFO:root:Best params: {'alpha': 0.10481131341546852}
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:Reading the file from:../datasets/files_generated/UX/study1_features_data_out_mahalanobis_transformedDistributions.csv
+INFO:root:Best params: {'alpha': 0.12648552168552957}
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Support vector machine****************
+INFO:root:Prediction for PQ
+INFO:root:Reading the file from:../datasets/files_generated/UX/study1_features_data_out_mahalanobis_transformedDistributions.csv
+INFO:root:Best params: {'gamma': 0.004641588833612777, 'epsilon': 0.21544346900318834, 'C': 0.774263682681127}
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:Reading the file from:../datasets/files_generated/UX/study1_features_data_out_mahalanobis_transformedDistributions.csv
+INFO:root:Best params: {'gamma': 0.004641588833612777, 'epsilon': 0.46415888336127786, 'C': 0.774263682681127}
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Random Forest****************
+INFO:root:Prediction for PQ
+INFO:root:Reading the file from:../datasets/files_generated/UX/study1_features_data_out_mahalanobis_transformedDistributions.csv
+INFO:root:Best params: {'n_estimators': 70, 'min_samples_split': 2, 'min_samples_leaf': 1, 'max_depth': 90, 'bootstrap': True}
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:Reading the file from:../datasets/files_generated/UX/study1_features_data_out_mahalanobis_transformedDistributions.csv
+INFO:root:Best params: {'n_estimators': 20, 'min_samples_split': 10, 'min_samples_leaf': 2, 'max_depth': 80, 'bootstrap': True}
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying MARS****************
+INFO:root:Prediction for PQ
+INFO:root:Reading the file from:../datasets/files_generated/UX/study1_features_data_out_mahalanobis_transformedDistributions.csv
+INFO:root:Best params: {'endspan': 5, 'endspan_alpha': 0.01, 'max_degree': 1, 'max_terms': 40, 'minspan_alpha': 0.01, 'penalty': 1.0, 'use_fast': True}
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:Reading the file from:../datasets/files_generated/UX/study1_features_data_out_mahalanobis_transformedDistributions.csv
+INFO:root:Best params: {'endspan': 5, 'endspan_alpha': 0.01, 'max_degree': 1, 'max_terms': 40, 'minspan_alpha': 0.01, 'penalty': 1.0, 'use_fast': True}
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:Reading the file from:../datasets/files_generated/UX/study1_features_data_out_mahalanobis.csv
+INFO:root:Best params: {'fit_intercept': True, 'normalize': True}
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:Reading the file from:../datasets/files_generated/UX/study1_features_data_out_mahalanobis.csv
+INFO:root:Best params: {'fit_intercept': True, 'normalize': True}
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Linear regression with stochastic gradient descent****************
+INFO:root:Prediction for PQ
+INFO:root:Reading the file from:../datasets/files_generated/UX/study1_features_data_out_mahalanobis.csv
+INFO:root:Best params: {'eta0': 0.01, 'max_iter': 20, 'penalty': None}
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:Reading the file from:../datasets/files_generated/UX/study1_features_data_out_mahalanobis.csv
+INFO:root:Best params: {'eta0': 0.01, 'max_iter': 20, 'penalty': None}
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Lasso Regression****************
+INFO:root:Prediction for PQ
+INFO:root:Reading the file from:../datasets/files_generated/UX/study1_features_data_out_mahalanobis.csv
+INFO:root:Best params: {'alpha': 0.05963623316594643}
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:Reading the file from:../datasets/files_generated/UX/study1_features_data_out_mahalanobis.csv
+INFO:root:Best params: {'alpha': 0.2682695795279725}
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Elastic Net Regression****************
+INFO:root:Prediction for PQ
+INFO:root:Reading the file from:../datasets/files_generated/UX/study1_features_data_out_mahalanobis.csv
+INFO:root:Best params: {'alpha': 0.12648552168552957}
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:Reading the file from:../datasets/files_generated/UX/study1_features_data_out_mahalanobis.csv
+INFO:root:Best params: {'alpha': 0.5689866029018293}
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Support vector machine****************
+INFO:root:Prediction for PQ
+INFO:root:Reading the file from:../datasets/files_generated/UX/study1_features_data_out_mahalanobis.csv
+INFO:root:Best params: {'gamma': 0.001, 'epsilon': 0.1291549665014884, 'C': 1.0}
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:Reading the file from:../datasets/files_generated/UX/study1_features_data_out_mahalanobis.csv
+INFO:root:Best params: {'gamma': 0.004641588833612777, 'epsilon': 0.774263682681127, 'C': 0.5994842503189409}
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Random Forest****************
+INFO:root:Prediction for PQ
+INFO:root:Reading the file from:../datasets/files_generated/UX/study1_features_data_out_mahalanobis.csv
+INFO:root:Best params: {'n_estimators': 40, 'min_samples_split': 5, 'min_samples_leaf': 4, 'max_depth': 90, 'bootstrap': True}
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:Reading the file from:../datasets/files_generated/UX/study1_features_data_out_mahalanobis.csv
+INFO:root:Best params: {'n_estimators': 40, 'min_samples_split': 5, 'min_samples_leaf': 4, 'max_depth': 70, 'bootstrap': True}
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying MARS****************
+INFO:root:Prediction for PQ
+INFO:root:Reading the file from:../datasets/files_generated/UX/study1_features_data_out_mahalanobis.csv
+INFO:root:Best params: {'endspan': 5, 'endspan_alpha': 0.01, 'max_degree': 2, 'max_terms': 40, 'minspan_alpha': 0.01, 'penalty': 1.0, 'use_fast': True}
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:Reading the file from:../datasets/files_generated/UX/study1_features_data_out_mahalanobis.csv
+INFO:root:Best params: {'endspan': 5, 'endspan_alpha': 0.01, 'max_degree': 1, 'max_terms': 40, 'minspan_alpha': 0.01, 'penalty': 1.0, 'use_fast': True}
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for PQ
+INFO:root:Reading the file from:../datasets/files_generated/UX/study1_features_data_out_mahalanobis.csv
+INFO:root:Prediction for PQ
+INFO:root:Reading the file from:../datasets/files_generated/UX/study1_features_data_out_mahalanobis.csv
+INFO:root:Best params: {'eta0': 0.01, 'max_iter': 500, 'penalty': None}
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:Reading the file from:../datasets/files_generated/UX/study1_features_data_out_mahalanobis.csv
+INFO:root:Best params: {'eta0': 0.01, 'max_iter': 1000, 'penalty': None}
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying MARS****************
+INFO:root:Prediction for PQ
+INFO:root:Reading the file from:../datasets/files_generated/UX/study1_features_data_out_mahalanobis.csv
+INFO:root:Best params: {'endspan_alpha': 0.05, 'max_degree': 1, 'max_terms': 20, 'minspan_alpha': 0.16666666666666666, 'penalty': 6.0, 'use_fast': True}
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:Reading the file from:../datasets/files_generated/UX/study1_features_data_out_mahalanobis.csv
+INFO:root:Best params: {'endspan_alpha': 0.05, 'max_degree': 1, 'max_terms': 10, 'minspan_alpha': 0.16666666666666666, 'penalty': 6.0, 'use_fast': True}
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Random Forest****************
+INFO:root:Prediction for PQ
+INFO:root:Reading the file from:../datasets/files_generated/UX/study1_features_data_out_mahalanobis.csv
+INFO:root:Best params: {'n_estimators': 100, 'min_samples_split': 2, 'min_samples_leaf': 2, 'max_features': 'auto', 'max_depth': 110, 'bootstrap': True}
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:Reading the file from:../datasets/files_generated/UX/study1_features_data_out_mahalanobis.csv
+INFO:root:Best params: {'n_estimators': 30, 'min_samples_split': 10, 'min_samples_leaf': 10, 'max_features': 'auto', 'max_depth': 70, 'bootstrap': True}
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Random Forest****************
+INFO:root:Prediction for PQ
+INFO:root:Reading the file from:../datasets/files_generated/UX/study1_features_data_out_mahalanobis.csv
+INFO:root:Best params: {'n_estimators': 20, 'min_samples_split': 15, 'min_samples_leaf': 2, 'max_features': 'auto', 'max_depth': 50, 'bootstrap': True}
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:Reading the file from:../datasets/files_generated/UX/study1_features_data_out_mahalanobis.csv
+INFO:root:Best params: {'n_estimators': 70, 'min_samples_split': 15, 'min_samples_leaf': 10, 'max_features': 'auto', 'max_depth': 110, 'bootstrap': True}
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for PQ
+INFO:root:Reading the file from:../datasets/files_generated/UX/study1_features_data_out_mahalanobis_transformedDistributions.csv
+INFO:root:Best params: {'eta0': 0.01, 'max_iter': 500, 'penalty': None}
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:Reading the file from:../datasets/files_generated/UX/study1_features_data_out_mahalanobis_transformedDistributions.csv
+INFO:root:Best params: {'eta0': 0.01, 'max_iter': 500, 'penalty': None}
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying MARS****************
+INFO:root:Prediction for PQ
+INFO:root:Reading the file from:../datasets/files_generated/UX/study1_features_data_out_mahalanobis_transformedDistributions.csv
+INFO:root:Best params: {'endspan_alpha': 0.05, 'max_degree': 1, 'max_terms': 10, 'minspan_alpha': 0.5, 'penalty': 3.0, 'use_fast': True}
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:Reading the file from:../datasets/files_generated/UX/study1_features_data_out_mahalanobis_transformedDistributions.csv
+INFO:root:Best params: {'endspan_alpha': 0.05, 'max_degree': 1, 'max_terms': 10, 'minspan_alpha': 0.05555555555555555, 'penalty': 6.0, 'use_fast': True}
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************

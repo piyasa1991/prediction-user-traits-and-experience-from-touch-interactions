@@ -1,0 +1,165 @@
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 35
+INFO:root:shape of training data (186, 35)
+INFO:root:shape of test data (587, 35)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.85
+INFO:root:R2: -0.66 (+/- 2.10)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 35
+INFO:root:shape of training data (186, 35)
+INFO:root:shape of test data (587, 35)
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 35
+INFO:root:shape of training data (186, 35)
+INFO:root:shape of test data (587, 35)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.85
+INFO:root:R2: -0.66 (+/- 2.10)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 35
+INFO:root:shape of training data (186, 35)
+INFO:root:shape of test data (587, 35)
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 35
+INFO:root:shape of training data (186, 35)
+INFO:root:shape of test data (587, 35)
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 35
+INFO:root:shape of training data (186, 35)
+INFO:root:shape of test data (587, 35)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.85
+INFO:root:R2: -0.66 (+/- 2.10)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 35
+INFO:root:shape of training data (186, 35)
+INFO:root:shape of test data (587, 35)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.59
+INFO:root:R2: -0.35 (+/- 0.63)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Lasso Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 35
+INFO:root:shape of training data (186, 35)
+INFO:root:shape of test data (587, 35)
+INFO:root:Best params: {'alpha': 1.0}
+INFO:root:RMSE: 1.22
+INFO:root:R2: 0.23 (+/- 0.11)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 35
+INFO:root:shape of training data (186, 35)
+INFO:root:shape of test data (587, 35)
+INFO:root:********Applying Linear Regression****************
+INFO:root:********Applying Linear Regression****************
+INFO:root:********Applying Linear Regression****************
+INFO:root:********Applying Lasso Regression****************
+INFO:root:********Applying Elastic Net Regression****************
+INFO:root:********Applying Support vector machine****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 35
+INFO:root:shape of training data (186, 35)
+INFO:root:shape of test data (587, 35)
+INFO:root:Best params: {'gamma': 0.0021544346900318843, 'epsilon': 0.1291549665014884, 'C': 1.291549665014884}
+INFO:root:RMSE: 1.17
+INFO:root:R2: 0.29 (+/- 0.19)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 35
+INFO:root:shape of training data (186, 35)
+INFO:root:shape of test data (587, 35)
+INFO:root:Best params: {'gamma': 0.007742636826811269, 'epsilon': 0.46415888336127786, 'C': 2.1544346900318834}
+INFO:root:RMSE: 1.19
+INFO:root:R2: 0.16 (+/- 0.20)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 35
+INFO:root:shape of training data (186, 35)
+INFO:root:shape of test data (587, 35)
+INFO:root:********Applying Linear Regression****************
+INFO:root:********Applying Lasso Regression****************
+INFO:root:********Applying Elastic Net Regression****************
+INFO:root:********Applying Support vector machine****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 34
+INFO:root:shape of training data (130, 34)
+INFO:root:shape of test data (587, 34)
+INFO:root:Best params: {'gamma': 0.001, 'epsilon': 0.16681005372000587, 'C': 5.994842503189409}
+INFO:root:RMSE: 1.06
+INFO:root:R2: 0.45 (+/- 0.19)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 34
+INFO:root:shape of training data (130, 34)
+INFO:root:shape of test data (587, 34)
+INFO:root:Best params: {'gamma': 0.0027825594022071257, 'epsilon': 0.46415888336127786, 'C': 0.774263682681127}
+INFO:root:RMSE: 1.24
+INFO:root:R2: 0.20 (+/- 0.12)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 34
+INFO:root:shape of training data (130, 34)
+INFO:root:shape of test data (587, 34)
+INFO:root:********Applying Linear Regression****************
+INFO:root:********Applying Lasso Regression****************
+INFO:root:********Applying Elastic Net Regression****************
+INFO:root:********Applying Support vector machine****************
+INFO:root:********Applying Linear Regression****************
+INFO:root:********Applying Lasso Regression****************
+INFO:root:********Applying Elastic Net Regression****************
+INFO:root:********Applying Support vector machine****************
+INFO:root:Prediction for PQ
+INFO:root:********Applying Linear Regression****************
+INFO:root:********Applying Lasso Regression****************
+INFO:root:********Applying Elastic Net Regression****************
+INFO:root:********Applying Support vector machine****************
+INFO:root:Prediction for PQ
+INFO:root:********Applying Linear Regression****************
+INFO:root:********Applying Lasso Regression****************
+INFO:root:********Applying Elastic Net Regression****************
+INFO:root:********Applying Support vector machine****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 34
+INFO:root:shape of training data (130, 34)
+INFO:root:shape of test data (587, 34)
+INFO:root:Best params: {'gamma': 0.0016681005372000592, 'epsilon': 0.16681005372000587, 'C': 5.994842503189409}
+INFO:root:RMSE: 1.04
+INFO:root:R2: 0.45 (+/- 0.16)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 34
+INFO:root:shape of training data (130, 34)
+INFO:root:shape of test data (587, 34)
+INFO:root:Best params: {'gamma': 0.005994842503189409, 'epsilon': 1.0, 'C': 1.291549665014884}
+INFO:root:RMSE: 1.20
+INFO:root:R2: 0.23 (+/- 0.15)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 34
+INFO:root:shape of training data (130, 34)
+INFO:root:shape of test data (587, 34)

@@ -1,0 +1,1081 @@
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 45
+INFO:root:shape of training data (541, 45)
+INFO:root:shape of test data (232, 45)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.22
+INFO:root:R2: 0.33 (+/- 0.25)
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 45
+INFO:root:shape of training data (541, 45)
+INFO:root:shape of test data (232, 45)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.22
+INFO:root:R2: 0.33 (+/- 0.25)
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 45
+INFO:root:shape of training data (541, 45)
+INFO:root:shape of test data (232, 45)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.22
+INFO:root:R2: 0.33 (+/- 0.25)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 45
+INFO:root:shape of training data (541, 45)
+INFO:root:shape of test data (232, 45)
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 45
+INFO:root:shape of training data (541, 45)
+INFO:root:shape of test data (232, 45)
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 45
+INFO:root:shape of training data (541, 45)
+INFO:root:shape of test data (232, 45)
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 45
+INFO:root:shape of training data (541, 45)
+INFO:root:shape of test data (232, 45)
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 45
+INFO:root:shape of training data (541, 45)
+INFO:root:shape of test data (232, 45)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.22
+INFO:root:R2: 0.33 (+/- 0.25)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 45
+INFO:root:shape of training data (541, 45)
+INFO:root:shape of test data (232, 45)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.19
+INFO:root:R2: 0.29 (+/- 0.12)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Lasso Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 45
+INFO:root:shape of training data (541, 45)
+INFO:root:shape of test data (232, 45)
+INFO:root:Best params: {'alpha': 1.0}
+INFO:root:RMSE: 1.36
+INFO:root:R2: 0.18 (+/- 0.02)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 45
+INFO:root:shape of training data (541, 45)
+INFO:root:shape of test data (232, 45)
+INFO:root:Best params: {'alpha': 1.0}
+INFO:root:RMSE: 1.36
+INFO:root:R2: 0.07 (+/- 0.03)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Elastic Net Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 45
+INFO:root:shape of training data (541, 45)
+INFO:root:shape of test data (232, 45)
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 46
+INFO:root:shape of training data (773, 46)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.14
+INFO:root:R2: 0.42 (+/- 0.15)
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 46
+INFO:root:shape of training data (773, 46)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.14
+INFO:root:R2: 0.42 (+/- 0.15)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 46
+INFO:root:shape of training data (773, 46)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.17
+INFO:root:R2: 0.26 (+/- 0.16)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Lasso Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 46
+INFO:root:shape of training data (773, 46)
+INFO:root:Best params: {'alpha': 1.0}
+INFO:root:RMSE: 1.33
+INFO:root:R2: 0.21 (+/- 0.06)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 46
+INFO:root:shape of training data (773, 46)
+INFO:root:Best params: {'alpha': 1.0}
+INFO:root:RMSE: 1.33
+INFO:root:R2: 0.07 (+/- 0.05)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Elastic Net Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 46
+INFO:root:shape of training data (773, 46)
+INFO:root:Best params: {'alpha': 1.0}
+INFO:root:RMSE: 1.24
+INFO:root:R2: 0.32 (+/- 0.08)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 46
+INFO:root:shape of training data (773, 46)
+INFO:root:Best params: {'alpha': 1.0}
+INFO:root:RMSE: 1.25
+INFO:root:R2: 0.17 (+/- 0.09)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Support vector machine****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 46
+INFO:root:shape of training data (773, 46)
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 49
+INFO:root:shape of training data (773, 49)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.13
+INFO:root:R2: 0.43 (+/- 0.12)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 49
+INFO:root:shape of training data (773, 49)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.19
+INFO:root:R2: 0.25 (+/- 0.18)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Lasso Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 49
+INFO:root:shape of training data (773, 49)
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.08
+INFO:root:R2: 0.48 (+/- 0.11)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.15
+INFO:root:R2: 0.29 (+/- 0.17)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Lasso Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'alpha': 1.0}
+INFO:root:RMSE: 1.16
+INFO:root:R2: 0.41 (+/- 0.09)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'alpha': 1.0}
+INFO:root:RMSE: 1.18
+INFO:root:R2: 0.26 (+/- 0.11)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Elastic Net Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'alpha': 1.0}
+INFO:root:RMSE: 1.13
+INFO:root:R2: 0.43 (+/- 0.10)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'alpha': 1.0}
+INFO:root:RMSE: 1.16
+INFO:root:R2: 0.29 (+/- 0.13)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Support vector machine****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'gamma': 0.005994842503189409, 'epsilon': 0.21544346900318834, 'C': 0.2782559402207124}
+INFO:root:RMSE: 1.05
+INFO:root:R2: 0.50 (+/- 0.13)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'gamma': 0.005994842503189409, 'epsilon': 0.46415888336127786, 'C': 0.2782559402207124}
+INFO:root:RMSE: 1.12
+INFO:root:R2: 0.34 (+/- 0.15)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'n_estimators': 30, 'min_samples_split': 20, 'min_samples_leaf': 12, 'max_features': 'auto', 'max_depth': 3}
+INFO:root:RMSE: 1.05
+INFO:root:R2: 0.50 (+/- 0.13)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'n_estimators': 100, 'min_samples_split': 90, 'min_samples_leaf': 38, 'max_features': 'auto', 'max_depth': 2}
+INFO:root:RMSE: 1.12
+INFO:root:R2: 0.32 (+/- 0.17)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Linear regression with stochastic gradient descent****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'eta0': 0.01, 'max_iter': 50, 'penalty': None}
+INFO:root:RMSE: 1.08
+INFO:root:R2: 0.48 (+/- 0.10)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'eta0': 0.01, 'max_iter': 50, 'penalty': None}
+INFO:root:RMSE: 1.16
+INFO:root:R2: 0.29 (+/- 0.16)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying MARS****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'max_degree': 1, 'max_terms': 25, 'penalty': 10.0, 'use_fast': True}
+INFO:root:RMSE: 1.06
+INFO:root:R2: 0.50 (+/- 0.14)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'max_degree': 1, 'max_terms': 20, 'penalty': 4.832930238571752, 'use_fast': True}
+INFO:root:RMSE: 1.13
+INFO:root:R2: 0.32 (+/- 0.13)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.08
+INFO:root:R2: 0.48 (+/- 0.11)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.15
+INFO:root:R2: 0.29 (+/- 0.17)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Lasso Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'alpha': 1.0}
+INFO:root:RMSE: 1.16
+INFO:root:R2: 0.41 (+/- 0.09)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'alpha': 1.0}
+INFO:root:RMSE: 1.18
+INFO:root:R2: 0.26 (+/- 0.11)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Elastic Net Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'alpha': 1.0}
+INFO:root:RMSE: 1.13
+INFO:root:R2: 0.43 (+/- 0.10)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'alpha': 1.0}
+INFO:root:RMSE: 1.16
+INFO:root:R2: 0.29 (+/- 0.13)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Support vector machine****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'gamma': 0.005994842503189409, 'epsilon': 0.21544346900318834, 'C': 0.2782559402207124}
+INFO:root:RMSE: 1.05
+INFO:root:R2: 0.50 (+/- 0.13)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'gamma': 0.005994842503189409, 'epsilon': 0.46415888336127786, 'C': 0.2782559402207124}
+INFO:root:RMSE: 1.12
+INFO:root:R2: 0.34 (+/- 0.15)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'n_estimators': 30, 'min_samples_split': 20, 'min_samples_leaf': 12, 'max_features': 'auto', 'max_depth': 3}
+INFO:root:RMSE: 1.05
+INFO:root:R2: 0.50 (+/- 0.13)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'n_estimators': 100, 'min_samples_split': 90, 'min_samples_leaf': 38, 'max_features': 'auto', 'max_depth': 2}
+INFO:root:RMSE: 1.12
+INFO:root:R2: 0.32 (+/- 0.17)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Linear regression with stochastic gradient descent****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'eta0': 0.01, 'max_iter': 50, 'penalty': None}
+INFO:root:RMSE: 1.08
+INFO:root:R2: 0.48 (+/- 0.10)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'eta0': 0.01, 'max_iter': 50, 'penalty': None}
+INFO:root:RMSE: 1.16
+INFO:root:R2: 0.29 (+/- 0.16)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying MARS****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'max_degree': 1, 'max_terms': 25, 'penalty': 10.0, 'use_fast': True}
+INFO:root:RMSE: 1.06
+INFO:root:R2: 0.50 (+/- 0.14)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'max_degree': 1, 'max_terms': 20, 'penalty': 4.832930238571752, 'use_fast': True}
+INFO:root:RMSE: 1.13
+INFO:root:R2: 0.32 (+/- 0.13)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.08
+INFO:root:R2: 0.48 (+/- 0.11)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.15
+INFO:root:R2: 0.29 (+/- 0.17)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Lasso Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'alpha': 1.0}
+INFO:root:RMSE: 1.16
+INFO:root:R2: 0.41 (+/- 0.09)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'alpha': 1.0}
+INFO:root:RMSE: 1.18
+INFO:root:R2: 0.26 (+/- 0.11)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Elastic Net Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'alpha': 1.0}
+INFO:root:RMSE: 1.13
+INFO:root:R2: 0.43 (+/- 0.10)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'alpha': 1.0}
+INFO:root:RMSE: 1.16
+INFO:root:R2: 0.29 (+/- 0.13)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Support vector machine****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'gamma': 0.005994842503189409, 'epsilon': 0.21544346900318834, 'C': 0.2782559402207124}
+INFO:root:RMSE: 1.05
+INFO:root:R2: 0.50 (+/- 0.13)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'gamma': 0.005994842503189409, 'epsilon': 0.46415888336127786, 'C': 0.2782559402207124}
+INFO:root:RMSE: 1.12
+INFO:root:R2: 0.34 (+/- 0.15)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'n_estimators': 30, 'min_samples_split': 20, 'min_samples_leaf': 12, 'max_features': 'auto', 'max_depth': 3}
+INFO:root:RMSE: 1.05
+INFO:root:R2: 0.50 (+/- 0.13)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'n_estimators': 100, 'min_samples_split': 90, 'min_samples_leaf': 38, 'max_features': 'auto', 'max_depth': 2}
+INFO:root:RMSE: 1.12
+INFO:root:R2: 0.32 (+/- 0.17)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Linear regression with stochastic gradient descent****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'eta0': 0.01, 'max_iter': 50, 'penalty': None}
+INFO:root:RMSE: 1.08
+INFO:root:R2: 0.48 (+/- 0.10)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'eta0': 0.01, 'max_iter': 50, 'penalty': None}
+INFO:root:RMSE: 1.16
+INFO:root:R2: 0.29 (+/- 0.16)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying MARS****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'max_degree': 1, 'max_terms': 25, 'penalty': 10.0, 'use_fast': True}
+INFO:root:RMSE: 1.06
+INFO:root:R2: 0.50 (+/- 0.14)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'max_degree': 1, 'max_terms': 20, 'penalty': 4.832930238571752, 'use_fast': True}
+INFO:root:RMSE: 1.13
+INFO:root:R2: 0.32 (+/- 0.13)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.08
+INFO:root:R2: 0.48 (+/- 0.11)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.08
+INFO:root:R2: 0.48 (+/- 0.11)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.15
+INFO:root:R2: 0.29 (+/- 0.17)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Lasso Regression****************
+INFO:root:********Applying Elastic Net Regression****************
+INFO:root:********Applying Support vector machine****************
+INFO:root:********Applying Linear regression with stochastic gradient descent****************
+INFO:root:********Applying MARS****************
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.08
+INFO:root:R2: 0.48 (+/- 0.11)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.15
+INFO:root:R2: 0.29 (+/- 0.17)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Lasso Regression****************
+INFO:root:********Applying Elastic Net Regression****************
+INFO:root:********Applying Support vector machine****************
+INFO:root:********Applying Linear regression with stochastic gradient descent****************
+INFO:root:********Applying MARS****************
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.08
+INFO:root:R2: 0.48 (+/- 0.11)
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.08
+INFO:root:R2: 0.48 (+/- 0.11)
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.08
+INFO:root:R2: 0.48 (+/- 0.11)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.15
+INFO:root:R2: 0.29 (+/- 0.17)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Lasso Regression****************
+INFO:root:********Applying Elastic Net Regression****************
+INFO:root:********Applying Support vector machine****************
+INFO:root:********Applying Linear regression with stochastic gradient descent****************
+INFO:root:********Applying MARS****************
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.08
+INFO:root:R2: 0.48 (+/- 0.11)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.15
+INFO:root:R2: 0.29 (+/- 0.17)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Lasso Regression****************
+INFO:root:********Applying Elastic Net Regression****************
+INFO:root:********Applying Support vector machine****************
+INFO:root:********Applying Linear regression with stochastic gradient descent****************
+INFO:root:********Applying MARS****************
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.08
+INFO:root:R2: 0.48 (+/- 0.11)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.15
+INFO:root:R2: 0.29 (+/- 0.17)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Lasso Regression****************
+INFO:root:********Applying Elastic Net Regression****************
+INFO:root:********Applying Support vector machine****************
+INFO:root:********Applying Linear regression with stochastic gradient descent****************
+INFO:root:********Applying MARS****************
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.08
+INFO:root:R2: 0.48 (+/- 0.11)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.15
+INFO:root:R2: 0.29 (+/- 0.17)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Lasso Regression****************
+INFO:root:********Applying Elastic Net Regression****************
+INFO:root:********Applying Support vector machine****************
+INFO:root:********Applying Linear regression with stochastic gradient descent****************
+INFO:root:********Applying MARS****************
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.08
+INFO:root:R2: 0.48 (+/- 0.11)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.15
+INFO:root:R2: 0.29 (+/- 0.17)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Lasso Regression****************
+INFO:root:********Applying Elastic Net Regression****************
+INFO:root:********Applying Support vector machine****************
+INFO:root:********Applying Linear regression with stochastic gradient descent****************
+INFO:root:********Applying MARS****************
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.08
+INFO:root:R2: 0.48 (+/- 0.11)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.15
+INFO:root:R2: 0.29 (+/- 0.17)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Lasso Regression****************
+INFO:root:********Applying Elastic Net Regression****************
+INFO:root:********Applying Support vector machine****************
+INFO:root:********Applying Linear regression with stochastic gradient descent****************
+INFO:root:********Applying MARS****************
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.08
+INFO:root:R2: 0.48 (+/- 0.11)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.15
+INFO:root:R2: 0.29 (+/- 0.17)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Lasso Regression****************
+INFO:root:********Applying Elastic Net Regression****************
+INFO:root:********Applying Support vector machine****************
+INFO:root:********Applying Linear regression with stochastic gradient descent****************
+INFO:root:********Applying MARS****************
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.08
+INFO:root:R2: 0.48 (+/- 0.11)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.15
+INFO:root:R2: 0.29 (+/- 0.17)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Lasso Regression****************
+INFO:root:********Applying Elastic Net Regression****************
+INFO:root:********Applying Support vector machine****************
+INFO:root:********Applying Linear regression with stochastic gradient descent****************
+INFO:root:********Applying MARS****************
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.08
+INFO:root:R2: 0.48 (+/- 0.11)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.15
+INFO:root:R2: 0.29 (+/- 0.17)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Lasso Regression****************
+INFO:root:********Applying Elastic Net Regression****************
+INFO:root:********Applying Support vector machine****************
+INFO:root:********Applying Linear regression with stochastic gradient descent****************
+INFO:root:********Applying MARS****************
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.08
+INFO:root:R2: 0.48 (+/- 0.11)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.15
+INFO:root:R2: 0.29 (+/- 0.17)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Lasso Regression****************
+INFO:root:********Applying Elastic Net Regression****************
+INFO:root:********Applying Support vector machine****************
+INFO:root:********Applying Linear regression with stochastic gradient descent****************
+INFO:root:********Applying MARS****************
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.08
+INFO:root:R2: 0.48 (+/- 0.11)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.15
+INFO:root:R2: 0.29 (+/- 0.17)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Lasso Regression****************
+INFO:root:********Applying Elastic Net Regression****************
+INFO:root:********Applying Support vector machine****************
+INFO:root:********Applying Linear regression with stochastic gradient descent****************
+INFO:root:********Applying MARS****************
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.08
+INFO:root:R2: 0.48 (+/- 0.11)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.15
+INFO:root:R2: 0.29 (+/- 0.17)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Lasso Regression****************
+INFO:root:********Applying Elastic Net Regression****************
+INFO:root:********Applying Support vector machine****************
+INFO:root:********Applying Linear regression with stochastic gradient descent****************
+INFO:root:********Applying MARS****************
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.08
+INFO:root:R2: 0.48 (+/- 0.11)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.15
+INFO:root:R2: 0.29 (+/- 0.17)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Lasso Regression****************
+INFO:root:********Applying Elastic Net Regression****************
+INFO:root:********Applying Support vector machine****************
+INFO:root:********Applying Linear regression with stochastic gradient descent****************
+INFO:root:********Applying MARS****************
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.08
+INFO:root:R2: 0.48 (+/- 0.11)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.15
+INFO:root:R2: 0.29 (+/- 0.17)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Lasso Regression****************
+INFO:root:********Applying Elastic Net Regression****************
+INFO:root:********Applying Support vector machine****************
+INFO:root:********Applying Linear regression with stochastic gradient descent****************
+INFO:root:********Applying MARS****************
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.08
+INFO:root:R2: 0.48 (+/- 0.11)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.15
+INFO:root:R2: 0.29 (+/- 0.17)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Lasso Regression****************
+INFO:root:********Applying Elastic Net Regression****************
+INFO:root:********Applying Support vector machine****************
+INFO:root:********Applying Linear regression with stochastic gradient descent****************
+INFO:root:********Applying MARS****************
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.08
+INFO:root:R2: 0.48 (+/- 0.11)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.15
+INFO:root:R2: 0.29 (+/- 0.17)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Lasso Regression****************
+INFO:root:********Applying Elastic Net Regression****************
+INFO:root:********Applying Support vector machine****************
+INFO:root:********Applying Linear regression with stochastic gradient descent****************
+INFO:root:********Applying MARS****************
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.08
+INFO:root:R2: 0.48 (+/- 0.11)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.15
+INFO:root:R2: 0.29 (+/- 0.17)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Lasso Regression****************
+INFO:root:********Applying Elastic Net Regression****************
+INFO:root:********Applying Support vector machine****************
+INFO:root:********Applying Linear regression with stochastic gradient descent****************
+INFO:root:********Applying MARS****************
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 49
+INFO:root:shape of training data (773, 49)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.13
+INFO:root:R2: 0.43 (+/- 0.12)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 49
+INFO:root:shape of training data (773, 49)
+INFO:root:Best params: {'fit_intercept': True}
+INFO:root:RMSE: 1.19
+INFO:root:R2: 0.25 (+/- 0.18)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Lasso Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 49
+INFO:root:shape of training data (773, 49)
+INFO:root:Best params: {'alpha': 1.0}
+INFO:root:RMSE: 1.28
+INFO:root:R2: 0.28 (+/- 0.06)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 49
+INFO:root:shape of training data (773, 49)
+INFO:root:Best params: {'alpha': 1.0}
+INFO:root:RMSE: 1.28
+INFO:root:R2: 0.13 (+/- 0.07)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Elastic Net Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 49
+INFO:root:shape of training data (773, 49)
+INFO:root:Best params: {'alpha': 1.0}
+INFO:root:RMSE: 1.22
+INFO:root:R2: 0.33 (+/- 0.08)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 49
+INFO:root:shape of training data (773, 49)
+INFO:root:Best params: {'alpha': 1.0}
+INFO:root:RMSE: 1.24
+INFO:root:R2: 0.19 (+/- 0.11)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Support vector machine****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 49
+INFO:root:shape of training data (773, 49)
+INFO:root:Best params: {'gamma': 0.0027825594022071257, 'epsilon': 0.46415888336127786, 'C': 0.774263682681127}
+INFO:root:RMSE: 1.09
+INFO:root:R2: 0.47 (+/- 0.12)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 49
+INFO:root:shape of training data (773, 49)
+INFO:root:Best params: {'gamma': 0.003593813663804626, 'epsilon': 0.5994842503189409, 'C': 0.46415888336127786}
+INFO:root:RMSE: 1.14
+INFO:root:R2: 0.31 (+/- 0.16)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 49
+INFO:root:shape of training data (773, 49)
+INFO:root:Best params: {'n_estimators': 30, 'min_samples_split': 20, 'min_samples_leaf': 12, 'max_features': 'auto', 'max_depth': 3}
+INFO:root:RMSE: 1.10
+INFO:root:R2: 0.46 (+/- 0.16)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 49
+INFO:root:shape of training data (773, 49)
+INFO:root:Best params: {'n_estimators': 80, 'min_samples_split': 30, 'min_samples_leaf': 15, 'max_features': 'auto', 'max_depth': 3}
+INFO:root:RMSE: 1.14
+INFO:root:R2: 0.30 (+/- 0.16)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Linear regression with stochastic gradient descent****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 49
+INFO:root:shape of training data (773, 49)
+INFO:root:Best params: {'eta0': 0.01, 'max_iter': 50, 'penalty': None}
+INFO:root:RMSE: 1.13
+INFO:root:R2: 0.42 (+/- 0.12)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 49
+INFO:root:shape of training data (773, 49)
+INFO:root:Best params: {'eta0': 0.01, 'max_iter': 50, 'penalty': None}
+INFO:root:RMSE: 1.18
+INFO:root:R2: 0.26 (+/- 0.17)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying MARS****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 49
+INFO:root:shape of training data (773, 49)
+INFO:root:Best params: {'max_degree': 1, 'max_terms': 25, 'penalty': 4.832930238571752, 'use_fast': True}
+INFO:root:RMSE: 1.14
+INFO:root:R2: 0.42 (+/- 0.11)
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:number of principal components: 49
+INFO:root:shape of training data (773, 49)
+INFO:root:Best params: {'max_degree': 1, 'max_terms': 25, 'penalty': 6.158482110660261, 'use_fast': True}
+INFO:root:RMSE: 1.13
+INFO:root:R2: 0.32 (+/- 0.15)
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 49
+INFO:root:shape of training data (773, 49)
+INFO:root:********Applying Linear Regression****************
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 25
+INFO:root:shape of training data (773, 25)
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 41
+INFO:root:shape of training data (773, 41)
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:number of principal components: 22
+INFO:root:shape of training data (773, 22)

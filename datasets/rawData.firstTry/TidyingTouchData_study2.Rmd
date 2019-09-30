@@ -1,0 +1,547 @@
+---
+title: "Tidying Touch Interaction Data Giorgio's Study"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(fig.width=12, fig.height=8, fig.path='Figs-TidyingTouchData/',
+                      echo=FALSE, warning=FALSE, message=FALSE)
+library(lattice)
+# library(Amelia)
+library(pander)
+library(ggplot2)
+library(e1071)
+library(readr)
+library(GGally)
+
+setwd("~/Auswertungen/2017-07_Studie_Giorgio/FeatureEngineering")
+
+univariateViewOn <- function(variable, threshold){
+  pander(paste0(variable, ": \n"))
+
+  pander(paste0("Cut at ", threshold))
+  
+  sample <- sample(which(data.experiment.selectedVariables[[variable]] < threshold), 3000)
+  
+  ggplot(data = data.experiment.selectedVariables[data.experiment.selectedVariables[[variable]] < threshold,], aes(User, get(variable), fill=User)) + geom_boxplot(alpha=0.3, outlier.size = 0.5, outlier.alpha = 1) + geom_jitter(data = data.experiment.selectedVariables[sample,], aes(User, get(variable)), alpha=0.75, size=0.5, shape=0, color="blue") + labs(title = variable)
+  
+  data.experiment.selectedVariables <- data.experiment.selectedVariables[data.experiment.selectedVariables[[variable]] < threshold,]
+
+  pander("Statistics on time_between_touches: \n")
+  summary <- summary(data.experiment.selectedVariables[[variable]])
+
+  summary <- data.frame(table(summary), names(summary))
+  summary$Freq <- NULL
+  colnames <- summary$names.summary.
+  summary <- t(summary)
+  colnames(summary) <- colnames
+  summary <- summary[-2,]
+  summary$sd <- sd(data.experiment.selectedVariables[[variable]], na.rm = TRUE)
+  summary$kurtosis <- kurtosis(data.experiment.selectedVariables[[variable]], na.rm = TRUE)
+  summary$skew <- skewness(data.experiment.selectedVariables[[variable]], na.rm = TRUE)
+
+  pander(data.frame(summary))
+}
+
+# ToDo: not only these, but more VPs...
+VP.numbers <- as.vector(c(611:671))
+User.ids <- as.vector(c(190:250))
+```
+
+# Data from PflegeTab-Database
+
+To get the data from the database, run the skript in [getDataFromDB.R](../getDataFromDB.R).
+You'll need to connect to the correct server (the skript uses do6.pflegetab.de) via terminal.
+
+Set the working directory.
+
+Set an appropriate destination folder for your data to be saved in, e.g., the folder your analysis will take place in.
+
+# Distribution of (Touch Down) Events in current experiment
+
+```{r data from pflegetab database, fig.show='hold', out.width="50%"}
+
+if ( !file.exists("01_DataExperiment_unprocessed.Rda") ) {
+  
+  load("RawData.Rda")
+  
+  # data.experiment <- data.experiment.interactions[data.experiment.interactions$user_id %in% User.ids,]
+  
+  rm(tracking.apps.raw, tracking.loginLogout.raw, tracking.menu.raw, tracking.notifications.raw, tracking.reward.raw, tracking.screen.raw)
+
+  #
+  tracking.touches.experiment <- tracking.touches.raw[tracking.touches.raw$user_id %in% User.ids,]
+  tracking.appStartClose.experiment <- tracking.appStartClose.raw[tracking.appStartClose.raw$user_id %in% User.ids,]
+  # tracking.quiz.experiment <- tracking.quiz.raw[tracking.quiz.raw$user_id %in% User.ids,]
+  tracking.spell.experiment <- tracking.spell.raw[tracking.spell.raw$user_id %in% User.ids,]
+
+  tracking.touches.experiment$originTable <- "touches"
+  tracking.appStartClose.experiment$originTable <- "appStartClose"
+  # tracking.quiz.experiment$originTable <- "quiz"
+  tracking.spell.experiment$originTable <- "spell"
+
+  tracking.touches.experiment$eventCode <- tracking.touches.experiment$event
+  tracking.appStartClose.experiment$eventCode <- tracking.appStartClose.experiment$event
+  # tracking.quiz.experiment$eventCode <- tracking.quiz.experiment$event
+  tracking.spell.experiment$eventCode <- tracking.spell.experiment$event
+
+  tracking.touches.experiment$event <- factor(tracking.touches.experiment$event, labels = c("touch.down", "touch.release"))
+  tracking.appStartClose.experiment$event <- factor(tracking.appStartClose.experiment$event, labels = c("app.started", "app.closed"))
+  # tracking.quiz.experiment$event <- factor(tracking.quiz.experiment$event, labels = c("loaded", "wrong.button", "correct.button"))
+  tracking.spell.experiment$event <- factor(tracking.spell.experiment$event, labels = c("loaded", "wrong.button", "correct.button", "wrong.placed", "correctly.placed", "completed.word"))
+
+  data.experiment.unsorted <- merge(tracking.touches.experiment, tracking.appStartClose.experiment, suffixes = c(".touches", ".appStartClose"), all = TRUE)
+  # data.experiment.unsorted <- merge(data.experiment.unsorted, tracking.quiz.experiment, all = TRUE)
+  data.experiment.unsorted <- merge(data.experiment.unsorted, tracking.spell.experiment, all = TRUE)
+  data.experiment <- data.frame(data.experiment.unsorted[order(data.experiment.unsorted$timestamp),])
+  rownames(data.experiment)  <- NULL
+  
+  save(data.experiment, VP.numbers, User.ids, file = "01_DataExperiment_unprocessed.Rda")
+  rm(list = ls())
+}
+
+if ( !file.exists("02_DataExperiment_labeledWithConds+SessionNrs.Rda") ) {
+
+  load("01_DataExperiment_unprocessed.Rda")
+  
+  
+  
+  ## get rid of the NAs in the spell-data for freezing or tinyIcons
+  # while(any(is.na(data.experiment$freezing[data.experiment$originTable == "spell"]))){
+  for(i in 1:5){
+    data.experiment$freezing[data.experiment$originTable == "spell"] <- ifelse(!is.na(data.experiment$freezing[which(data.experiment$originTable == "spell")+1]),  data.experiment$freezing[which(data.experiment$originTable == "spell")+1], data.experiment$freezing[which(data.experiment$originTable == "spell")-1])
+    data.experiment$tinyIcons[data.experiment$originTable == "spell"] <- ifelse(!is.na(data.experiment$tinyIcons[which(data.experiment$originTable == "spell")+1]),  data.experiment$tinyIcons[which(data.experiment$originTable == "spell")+1], data.experiment$tinyIcons[which(data.experiment$originTable == "spell")-1])
+    data.experiment$lowContrast[data.experiment$originTable == "spell"] <- ifelse(!is.na(data.experiment$lowContrast[which(data.experiment$originTable == "spell")+1]),  data.experiment$lowContrast[which(data.experiment$originTable == "spell")+1], data.experiment$lowContrast[which(data.experiment$originTable == "spell")-1])
+    data.experiment$noFeedback[data.experiment$originTable == "spell"] <- ifelse(!is.na(data.experiment$noFeedback[which(data.experiment$originTable == "spell")+1]),  data.experiment$noFeedback[which(data.experiment$originTable == "spell")+1], data.experiment$noFeedback[which(data.experiment$originTable == "spell")-1])
+  }
+  
+  data.experiment$appCode <- data.experiment$app
+  data.experiment$App <- factor(data.experiment$appCode, labels = c("Spell"))
+  data.experiment$User <- as.factor(data.experiment$user_id)
+  
+  # ToDo: Code additional Conditions, e.g. Adaption
+  data.experiment$condCode <- 0
+  data.experiment$condCode[data.experiment$freezing == 0 & data.experiment$tinyIcons == 0] <- 1
+  data.experiment$condCode[data.experiment$freezing == 0 & data.experiment$tinyIcons == 1] <- 2
+  data.experiment$Cond <- factor(data.experiment$condCode, labels = c("noInfo", "Normal", "TinyIcons"))
+  
+  appStart.indices <- which(data.experiment$event == "app.started")
+  sessionNr <- 0
+  startCounter <- 1
+  for(i in 1:dim(data.experiment)[1]){
+    data.experiment$sessionNr[i] <- sessionNr
+    if(i == appStart.indices[startCounter] & startCounter <= length(appStart.indices)){
+      startCounter <- startCounter + 1
+      sessionNr <- sessionNr + 1
+    }
+  }
+  
+  
+  data.experiment <- data.experiment[data.experiment$Cond != "noInfo" &  data.experiment$event != "app.started" &  data.experiment$event != "app.closed",]
+  data.experiment$Cond <- factor(data.experiment$Cond)
+  
+  # ToDo: Find appropriate handling for different experiments!
+  table(data.experiment$sessionNr)
+  sessionMembers <- as.data.frame(table(data.experiment$sessionNr))
+  sessionMembers[sessionMembers$Freq < 5,] # 4 sessions that are not rated, started and immediately stopped app -> leaves 372 sessions ;)
+  
+  data.experiment <- data.experiment[!(data.experiment$sessionNr %in% sessionMembers$Var1[sessionMembers$Freq < 5]),]
+  rownames(data.experiment) <- NULL
+  
+  data.experiment$sessionNr <- as.numeric(factor(data.experiment$sessionNr))
+  
+  
+  #######################################################
+  # add study-typical conditions
+  #######################################################
+  
+  library(readr)
+  mapping.sessions.conditions <- read_delim("../Data_Demo_Mapping/SessionNr_Condition-Table 1.csv", 
+    ";", escape_double = FALSE, trim_ws = TRUE)
+  test <- merge(data.experiment, mapping.sessions.conditions, by.x = c("user_id", "sessionNr"), by.y = c("UserId", "SessionNr"))
+  test$Size[test$Size == "Small"] <- "TinyIcons"  
+  test$Size[test$Size == "Wrong Participant"] <- "noInfo"  
+  test$labeling.mistake <- FALSE
+  test <- test[is.na(test$Command) | test$Command != "Wrong Participant",]
+  
+  test$Position <- as.factor(test$Position)
+  test$HandUsed <- as.factor(test$HandToDrag)
+  test$Handedness[test$Handedness == "Left"] <- "LEFT"
+  test$Handedness[test$Handedness == "Right"] <- "RIGHT"
+  test$Handedness <- as.factor(test$Handedness)
+         
+  table(test$Size[test$Size != "noInfo"] == test$Cond[test$Size != "noInfo"])
+  incorrect.labeled.sessions <- unique(test$sessionNr[(test$Size[test$Size != "noInfo"] != test$Cond[test$Size != "noInfo"])])
+  # incorrect.labeled.participant <- unique(test$user_id[(test$Size[test$Size != "noInfo"] != test$Cond[test$Size != "noInfo"])])
+  
+  for (s in incorrect.labeled.sessions) {
+    test$labeling.mistake[test$sessionNr == s] <- TRUE
+    test$Size[test$sessionNr == s] <- as.character(test$Cond[test$sessionNr == s])
+  }
+  
+  table(test$Size[test$Size != "noInfo"] == test$Cond[test$Size != "noInfo"])
+  
+  test$IconSize <- factor(test$Size, labels = c("Normal", "TinyIcons"))
+  
+  test$Cond <- interaction(test$IconSize, test$Position, test$Handedness, test$HandUsed)
+  
+  data.experiment <- test
+  
+  test <- data.experiment
+  
+  barplot(table(data.experiment$Cond))
+  
+  length(unique(data.experiment$sessionNr))
+  
+  sessions.to.merge <- unique(test$sessionNr[!is.na(test$Command)])
+  for (s in sessions.to.merge){
+    test$sessionNr[test$sessionNr == (s + 1)] <- s
+  }
+  
+  length(unique(test$sessionNr))
+  test$Command <- NULL
+  
+  data.experiment <- test
+  data.experiment$condCode <- as.factor(data.experiment$Condition)
+  
+  # unique(test$Size[test$sessionNr == 104 ])
+  # unique(test$Cond[test$sessionNr == 104 ])
+  # 
+  # unique(test$Size[test$sessionNr == 139])
+  # unique(test$Cond[test$sessionNr == 139 ])
+  # 
+  # unique(test$Size[test$sessionNr == 245])
+  # unique(test$Cond[test$sessionNr == 245])
+  # 
+  # unique(test$Size[test$sessionNr == 246 ])
+  # unique(test$Cond[test$sessionNr == 246])
+  
+  
+  data.experiment$sessionTypeCode <- 0
+  data.experiment$sessionTypeCode <- with(data.experiment, as.numeric(interaction(appCode, condCode, user_id)))
+  data.experiment$SessionType <- with(data.experiment, interaction(App, Cond, user_id))
+  
+  save(data.experiment, VP.numbers, User.ids, file = "02_DataExperiment_labeledWithConds+SessionNrs.Rda")
+  
+  rm(list = ls())
+}
+  
+if ( !file.exists("03_DataExperiment_labeledWithConds+SessionNrs+GameLogic.Rda") ) {
+  
+  load("02_DataExperiment_labeledWithConds+SessionNrs.Rda")
+  
+  #######################################################
+  # EXTRACT GAME BASED FEATURES
+  #######################################################
+  
+  # numbering Interactions and Tasks
+  load.indices <- which(data.experiment$event == "loaded")
+  load.indices <- load.indices - 1
+  sessionNr.old <- 0
+  task.Nr <- 0
+  interaction.Nr <- 0
+  loadCounter <- 1
+  aimed.at.button <- FALSE
+  hit.correct.button <- FALSE
+  placed.correctly <- FALSE
+  placed <- FALSE
+  
+  for(i in 1:dim(data.experiment)[1]){
+    if (sessionNr.old != data.experiment$sessionNr[i]){
+      interaction.Nr <- 0
+      task.Nr <- 0
+    }
+  
+    if(data.experiment$event[i] == "loaded"){
+      interaction.Nr <- interaction.Nr + 1
+      task.Nr <- task.Nr + 1
+      loadCounter <- loadCounter + 1
+      aimed.at.button <- FALSE
+      hit.correct.button <- FALSE
+      placed.correctly <- FALSE
+      
+    } else {
+    
+      if (data.experiment$App[i] == "Quiz"){
+        if (data.experiment$event[i] %in% c("correct.button", "wrong.button")){
+          if(hit.correct.button){
+            task.Nr <- task.Nr + 1
+          }
+          hit.correct.button <- (data.experiment$event[i] == "correct.button")
+          if (!aimed.at.button){
+            aimed.at.button <- TRUE
+          } else {
+            interaction.Nr <- interaction.Nr + 1
+          }
+        }
+      } else { # "Spell"
+        if (data.experiment$event[i] %in% c("correct.button", "wrong.button")){
+          if (!aimed.at.button){
+            aimed.at.button <- TRUE
+          } 
+        }
+        if (data.experiment$event[i] %in% c("correctly.placed", "wrong.placed")){
+          # if (aimed.at.button){
+          #   if (!placed){
+              placed <- TRUE
+              placed.correctly <- (data.experiment$event[i] == "correctly.placed")
+          #   } else {
+              # interaction.Nr <- interaction.Nr + 1
+          #   }
+          # }
+        }
+      }
+      
+      
+    }
+  
+    sessionNr.old <- data.experiment$sessionNr[i]
+    # print(c(i, interaction.Nr))
+    data.experiment$interactionNr[i] <- interaction.Nr
+    data.experiment$taskNr[i] <- task.Nr
+    if (placed){
+      interaction.Nr <- interaction.Nr + 1
+      placed <- FALSE
+    }
+    if(placed.correctly){
+      task.Nr <- task.Nr + 1
+      placed.correctly <- FALSE
+    }
+    
+    
+  }
+  
+  # View(head(with(data.experiment[data.experiment$App == "Quiz",], data.frame(id, App, Cond, timestamp, event, sessionNr, interactionNr, taskNr, button_pressed, correct_answer, x_location, y_location)), n = 2000))
+  # View(tail(with(data.experiment[data.experiment$App == "Quiz",], data.frame(id, App, Cond, freezing_duration, timestamp, event, sessionNr, interactionNr, taskNr, button_pressed, correct_answer, x_location, y_location)), n = 2000))
+  # View(head(with(data.experiment[data.experiment$App == "Spell",], data.frame(id, App, Cond, timestamp, event, sessionNr, interactionNr, taskNr, button_pressed, correct_answer, x_location, y_location)), n = 2000))
+  # View(tail(with(data.experiment[data.experiment$App == "Spell",], data.frame(id, App, Cond, freezing_duration, timestamp, event, sessionNr, interactionNr, taskNr, button_pressed, correct_answer, x_location, y_location)), n = 2000))
+  
+  
+  data.experiment$SessionInteraction <- factor(with(data.experiment, interaction(sessionNr, interactionNr)))
+  data.experiment$SessionTask <- factor(with(data.experiment, interaction(sessionNr, taskNr)))
+  
+  #save(data.experiment, file="SessionsDataStudie01.Rda")
+  
+  # dim(as.data.frame(table(data.experiment$SessionInteraction)))
+  
+  sessionMembers <- as.data.frame(table(data.experiment$SessionInteraction))
+  dim(sessionMembers[sessionMembers$Freq < 2,]) # interactions with only one entry are artefacts
+  
+  data.experiment <- data.experiment[!(data.experiment$SessionInteraction %in% sessionMembers$Var1[sessionMembers$Freq < 2]),]
+  rownames(data.experiment) <- NULL
+  
+  data.experiment$SessionInteraction <- factor(with(data.experiment, interaction(sessionNr, interactionNr)))
+  data.experiment$SessionTask <- factor(with(data.experiment, interaction(sessionNr, taskNr)))
+  
+  dim(as.data.frame(table(data.experiment$SessionInteractionNr)))
+  
+  rownames(data.experiment) <- NULL
+  
+  # table(data.experiment$sessionNr)
+  
+  save(data.experiment, VP.numbers, User.ids, file = "03_DataExperiment_labeledWithConds+SessionNrs+GameLogic.Rda")
+  
+  rm(list = ls())
+}
+
+load("03_DataExperiment_labeledWithConds+SessionNrs+GameLogic.Rda")
+
+pie(table(factor(with(data.experiment[data.experiment$event == "touch.down",], interaction(Cond, App)))), main=paste0("Frequency Distribution of Touch Down Events per Condition and App \n # Test Participants: ", length(User.ids)))
+pie(table(factor(with(data.experiment[data.experiment$event == "touch.down" & data.experiment$user_id > 121,], interaction(Cond, App)))), main=paste0("Frequency Distribution of Touch Down Events per Condition and App whith working Quiz Freezing \n # Test Participants: ", length(User.ids[User.ids > 121])))
+
+pie(table(factor(with(data.experiment, interaction(Cond, App)))), main=paste0("Frequency Distribution of Events per Condition and App \n # Test Participants: ", length(User.ids)))
+pie(table(factor(with(data.experiment[data.experiment$user_id > 121,], interaction(Cond, App)))), main=paste0("Frequency Distribution of Events per Condition and App whith working Quiz Freezing \n # Test Participants: ", length(User.ids[User.ids > 121])))
+# barchart(table(factor(with(data.experiment, interaction(Cond, App)))), main="Number of Events per Condition and App")
+# barchart(table(factor(with(data.experiment[data.experiment$user_id > 121,], interaction(Cond, App)))), main="Number of Events per Condition and App whith working Quiz Freezing")
+
+
+# table(data.experiment$sessionCode)
+# table(data.experiment$Session)
+# table(factor(with(data.experiment, interaction(Cond, App))))
+
+
+```
+
+# Extract General Touch Features
+
+The events "touch.down" and "touch.release" are combined to "touch". The button-parameters of "touch.release" are renamed for "target.*".
+
+```{r extract general touch features}
+
+if ( !file.exists("04_part1_DataExperiment_generalTouchFeatures.Rda") ) {
+  #######################################################
+  # EXTRACTING GENERAL FEATURES
+  #######################################################
+  
+  load("03_DataExperiment_labeledWithConds+SessionNrs+GameLogic.Rda")
+  
+  # extract touch duration, swipe length, swipe speed, time between touches
+  tracking.touches.d <- subset(data.experiment, data.experiment$event=="touch.down")
+  tracking.touches.u <- subset(data.experiment, data.experiment$event=="touch.release")
+  
+  ids.d <- tracking.touches.u$id-1
+  ids.u <- tracking.touches.d$id+1
+  
+  touches.up <- tracking.touches.u[tracking.touches.u$id %in% ids.u,]
+  touches.down <- tracking.touches.d[tracking.touches.d$id %in% ids.d,]
+  
+  touches.up$touch.duration <- touches.up$timestamp - touches.down$timestamp
+  touches.down$touch.duration <- touches.up$timestamp - touches.down$timestamp
+  
+  touches.up$swipe_length <- sqrt((touches.down$x_location - touches.up$x_location)^2 + (touches.down$y_location - touches.up$y_location)^2)
+  touches.up$swipe_length.x <- touches.up$x_location - touches.down$x_location
+  touches.up$swipe_length.y <- touches.up$y_location - touches.down$y_location
+  touches.up$swipe_speed <- touches.up$swipe_length / as.numeric(touches.up$touch.duration)
+  touches.up$swipe_speed.x <- touches.up$swipe_length.x / as.numeric(touches.up$touch.duration)
+  touches.up$swipe_speed.y <- touches.up$swipe_length.y / as.numeric(touches.up$touch.duration)
+  # touches$isSwipe <- touches$swipe_length > 0
+  # touches$missedTarget <- !touches$button_pressed
+  touches.up$time_between_touches <- c(NA,touches.down$timestamp[2:nrow(touches.down)] - touches.up$timestamp[1:(nrow(touches.down)-1)])
+  
+  touches.up$target_height <- touches.up$button_height
+  touches.up$target_origin_x <- touches.up$button_origin_x
+  touches.up$target_origin_y <- touches.up$button_origin_y
+  touches.up$target_touch_x_location <- touches.up$button_touch_x_location
+  touches.up$target_touch_y_location <- touches.up$button_touch_y_location
+  touches.up$target_width <- touches.up$button_width
+  touches.up$x_location.release <- touches.up$x_location
+  touches.up$y_location.release <- touches.up$y_location
+  
+  data.experiment$x_location.down <- data.experiment$x_location
+  data.experiment$y_location.down <- data.experiment$y_location
+  
+  data.experiment$touch.duration[data.experiment$event=="touch.down" & data.experiment$id %in% touches.down$id ] <- touches.up$touch.duration
+  data.experiment$swipe_length[data.experiment$event=="touch.down" & data.experiment$id %in% touches.down$id ] <- touches.up$swipe_length
+  data.experiment$swipe_length.x[data.experiment$event=="touch.down" & data.experiment$id %in% touches.down$id ] <- touches.up$swipe_length.x
+  data.experiment$swipe_length.y[data.experiment$event=="touch.down" & data.experiment$id %in% touches.down$id ] <- touches.up$swipe_length.y
+  data.experiment$swipe_speed[data.experiment$event=="touch.down" & data.experiment$id %in% touches.down$id ] <- touches.up$swipe_speed
+  data.experiment$swipe_speed.x[data.experiment$event=="touch.down" & data.experiment$id %in% touches.down$id ] <- touches.up$swipe_speed.x
+  data.experiment$swipe_speed.y[data.experiment$event=="touch.down" & data.experiment$id %in% touches.down$id ] <- touches.up$swipe_speed.y
+  data.experiment$time_between_touches[data.experiment$event=="touch.down" & data.experiment$id %in% touches.down$id ] <- touches.up$time_between_touches
+  
+  data.experiment$target_height[data.experiment$event=="touch.down" & data.experiment$id %in% touches.down$id ] <- touches.up$target_height
+  data.experiment$target_origin_x[data.experiment$event=="touch.down" & data.experiment$id %in% touches.down$id ] <- touches.up$target_origin_x
+  data.experiment$target_origin_y[data.experiment$event=="touch.down" & data.experiment$id %in% touches.down$id ] <- touches.up$target_origin_y
+  data.experiment$target_touch_x_location[data.experiment$event=="touch.down" & data.experiment$id %in% touches.down$id ] <- touches.up$target_touch_x_location
+  data.experiment$target_touch_y_location[data.experiment$event=="touch.down" & data.experiment$id %in% touches.down$id ] <- touches.up$target_touch_y_location
+  data.experiment$target_width[data.experiment$event=="touch.down" & data.experiment$id %in% touches.down$id ] <- touches.up$target_width
+  data.experiment$x_location.release[data.experiment$event=="touch.down" & data.experiment$id %in% touches.down$id ] <- touches.up$x_location.release
+  data.experiment$y_location.release[data.experiment$event=="touch.down" & data.experiment$id %in% touches.down$id ] <- touches.up$y_location.release
+  
+  save(data.experiment, VP.numbers, User.ids, file = "04_part1_DataExperiment_generalTouchFeatures.Rda")
+    
+  rm(list = ls())
+}
+
+# ToDo: estimate differences to button centers
+
+extractTouchAccuracy <- function(touches.experiment){
+  
+  apps <- attributes(touches.experiment$App)$levels
+  conds <- attributes(touches.experiment$Cond)$levels
+  users <- as.numeric(attributes(as.factor(touches.experiment$User))$levels)
+  
+  touches.experiment$button_center_x <- NA
+  touches.experiment$button_center_y <- NA
+  
+  touches.experiment$difference.touch_buttonCenter_x <- NA
+  touches.experiment$difference.touch_buttonCenter_y <- NA
+  
+  touches.experiment$touchAccuracy <- NA
+  touches.experiment$touchAccuracy_x <- NA
+  touches.experiment$touchAccuracy_y <- NA
+  
+  for(user in users){
+    for(appName in apps){
+      for(cond in conds){
+        currentGameData <- touches.experiment[touches.experiment$User == user & touches.experiment$App == appName & touches.experiment$Cond == cond & (touches.experiment$event == "touch.down" | touches.experiment$event == "touch.release"),]
+        if (dim(currentGameData)[1] > 0){
+          l <- length(currentGameData$button_pressed)
+          for(i in 1:l){
+            touch_x <- currentGameData$x_location.down[i]
+            touch_y <- currentGameData$y_location.down[i]
+            
+            if(currentGameData$button_pressed[i]){
+              
+              button_center_x <- currentGameData$button_origin_x[i] + currentGameData$button_width[i]/2
+              button_center_y <- currentGameData$button_origin_y[i] + currentGameData$button_height[i]/2
+              
+            } else {
+              
+              j <- i
+              
+              while(!currentGameData$button_pressed[j] & (j<l)){
+                j <- j+1
+              }
+              
+              if (j > l){
+                
+                button_center_x <- NA
+                button_center_y <- NA
+                
+              } else {
+                
+                button_center_x <- currentGameData$button_origin_x[j] + currentGameData$button_width[j]/2
+                button_center_y <- currentGameData$button_origin_y[j] + currentGameData$button_height[j]/2
+                
+                currentGameData$button_width[i] <- currentGameData$button_width[j]
+                currentGameData$button_height[i] <- currentGameData$button_height[j]
+                
+              }
+            } # end check if button pressed
+            
+            currentGameData$button_center_x[i] <- button_center_x
+            currentGameData$button_center_y[i] <- button_center_y
+            
+            currentGameData$difference.touch_buttonCenter_x[i] <- touch_x - button_center_x
+            currentGameData$difference.touch_buttonCenter_y[i] <- touch_y - button_center_y
+            
+            currentGameData$touchAccuracy_x[i] <- (currentGameData$x_location[i]-currentGameData$button_center_x[i])/(0.5*currentGameData$button_width[i])
+            currentGameData$touchAccuracy_y[i] <- (currentGameData$y_location[i]-currentGameData$button_center_y[i])/(0.5*currentGameData$button_height[i])
+            currentGameData$touchAccuracy[i] <- currentGameData$touchAccuracy_x[i] * currentGameData$touchAccuracy_y[i]
+            
+            # print(with(currentGameData[i,], data.frame(button_pressed, correct_answer, x_location, button_origin_x, button_width, button_center_x, difference.touch_buttonCenter_x, y_location, button_origin_y, button_height, button_center_y, difference.touch_buttonCenter_y)))
+          } # end for loop through data for one run
+          
+          touches.experiment$difference.touch_buttonCenter_x[touches.experiment$User == user & touches.experiment$App == appName & touches.experiment$Cond == cond & (touches.experiment$event == "touch.down" | touches.experiment$event == "touch.release")] <- currentGameData$difference.touch_buttonCenter_x
+          touches.experiment$difference.touch_buttonCenter_y[touches.experiment$User == user & touches.experiment$App == appName & touches.experiment$Cond == cond & (touches.experiment$event == "touch.down" | touches.experiment$event == "touch.release")] <- currentGameData$difference.touch_buttonCenter_y
+          
+          touches.experiment$touchAccuracy_x[touches.experiment$User == user & touches.experiment$App == appName & touches.experiment$Cond == cond & (touches.experiment$event == "touch.down" | touches.experiment$event == "touch.release")] <- currentGameData$touchAccuracy_x
+          touches.experiment$touchAccuracy_y[touches.experiment$User == user & touches.experiment$App == appName & touches.experiment$Cond == cond & (touches.experiment$event == "touch.down" | touches.experiment$event == "touch.release")] <- currentGameData$touchAccuracy_y
+          touches.experiment$touchAccuracy[touches.experiment$User == user & touches.experiment$App == appName & touches.experiment$Cond == cond & (touches.experiment$event == "touch.down" | touches.experiment$event == "touch.release")] <- currentGameData$touchAccuracy
+          
+          # touches.experiment <- ddply(touches.experiment, c("User"), transform, touchAccuracy_x.std = scale(touchAccuracy_x))
+          # touches.experiment <- ddply(touches.experiment, c("User"), transform, touchAccuracy_y.std = scale(touchAccuracy_y))
+          # touches.experiment <- ddply(touches.experiment, c("User"), transform, touchAccuracy.std = scale(touchAccuracy))
+          
+          touches.experiment$button_center_x[touches.experiment$User == user & touches.experiment$App == appName & touches.experiment$Cond == cond & (touches.experiment$event == "touch.down" | touches.experiment$event == "touch.release")] <- currentGameData$button_center_x
+          touches.experiment$button_center_y[touches.experiment$User == user & touches.experiment$App == appName & touches.experiment$Cond == cond & (touches.experiment$event == "touch.down" | touches.experiment$event == "touch.release")] <- currentGameData$button_center_y
+          
+          touches.experiment$button_width[touches.experiment$User == user & touches.experiment$App == appName & touches.experiment$Cond == cond & (touches.experiment$event == "touch.down" | touches.experiment$event == "touch.release")] <- currentGameData$button_width
+          touches.experiment$button_height[touches.experiment$User == user & touches.experiment$App == appName & touches.experiment$Cond == cond & (touches.experiment$event == "touch.down" | touches.experiment$event == "touch.release")] <- currentGameData$button_height
+          
+          # View(head(with(touches.experiment[touches.experiment$User == user & touches.experiment$App == appName & touches.experiment$Cond == cond,], data.frame(button_pressed, correct_answer, x_location, button_origin_x, button_width, button_touch_x_location, button_center_x, difference.touch_buttonCenter_x, touchAccuracy_x, y_location, button_origin_y, button_height, button_touch_y_location, button_center_y, difference.touch_buttonCenter_y, touchAccuracy_y)) , 25))
+        }
+      }
+    }
+  }
+  
+  # View(with(touches.experiment, data.frame(button_pressed, correct_answer, x_location, button_origin_x, button_width, button_center_x, difference.touch_buttonCenter_x, y_location, button_origin_y, button_height, button_center_y, difference.touch_buttonCenter_y)))
+  
+  
+  return(touches.experiment)
+}
+
+if ( !file.exists("04_DataExperiment_generalTouchFeatures.Rda") ) {
+  
+  load("04_part1_DataExperiment_generalTouchFeatures.Rda")
+  
+  data.experiment <- extractTouchAccuracy(data.experiment)
+  
+  save(data.experiment, VP.numbers, User.ids, file = "04_DataExperiment_generalTouchFeatures.Rda")
+    
+  rm(list = ls())
+}
+
+
+```

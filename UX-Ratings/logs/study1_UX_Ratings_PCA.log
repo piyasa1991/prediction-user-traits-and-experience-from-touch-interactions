@@ -1,0 +1,138 @@
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:Reading the file from:~/datasets/files_generated/UX/study1_features_data.csv
+INFO:root:Reduced dimension for 98% variance: (52, 181)
+INFO:root:Reducd dimension: 52
+INFO:root:Best params: {'pca__n_components': 0.98, 'clf__normalize': False, 'clf__fit_intercept': True}
+INFO:root:Best score after fitting the estimator with best params:-0.24870949371086995
+INFO:root:****************************************************************************************************
+INFO:root:Reading the file from:~/datasets/files_generated/UX/study1_features_data_out_mahalanobis.csv
+INFO:root:Reduced dimension for 98% variance: (51, 181)
+INFO:root:Reducd dimension: 51
+INFO:root:Best params: {'pca__n_components': 0.98, 'clf__normalize': False, 'clf__fit_intercept': True}
+INFO:root:Best score after fitting the estimator with best params:-0.00658207967378868
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:Reading the file from:~/datasets/files_generated/UX/study1_features_data_out_manhattan.csv
+INFO:root:Reduced dimension for 98% variance: (49, 181)
+INFO:root:Reducd dimension: 49
+INFO:root:Best params: {'pca__n_components': 0.98, 'clf__normalize': True, 'clf__fit_intercept': True}
+INFO:root:Best score after fitting the estimator with best params:-1.0846705782843808
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Linear regression with stochastic gradient descent****************
+INFO:root:Prediction for PQ
+INFO:root:Reading the file from:~/datasets/files_generated/UX/study1_features_data.csv
+INFO:root:Reduced dimension for 98% variance: (52, 181)
+INFO:root:Reducd dimension: 52
+INFO:root:Best params: {'clf__eta0': 0.001, 'pca__n_components': 0.98, 'clf__penalty': None, 'clf__max_iter': 100}
+INFO:root:Best score after fitting the estimator with best params:-0.08171510577140259
+INFO:root:****************************************************************************************************
+INFO:root:Reading the file from:~/datasets/files_generated/UX/study1_features_data_out_mahalanobis.csv
+INFO:root:Reduced dimension for 98% variance: (51, 181)
+INFO:root:Reducd dimension: 51
+INFO:root:Best params: {'clf__eta0': 0.01, 'pca__n_components': 0.98, 'clf__penalty': None, 'clf__max_iter': 50}
+INFO:root:Best score after fitting the estimator with best params:0.08356017486404473
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:Reading the file from:~/datasets/files_generated/UX/study1_features_data_out_manhattan.csv
+INFO:root:Reduced dimension for 98% variance: (49, 181)
+INFO:root:Reducd dimension: 49
+INFO:root:Best params: {'clf__eta0': 0.001, 'pca__n_components': 0.98, 'clf__penalty': None, 'clf__max_iter': 100}
+INFO:root:Best score after fitting the estimator with best params:-0.14726338088883276
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Lasso Regression****************
+INFO:root:Prediction for PQ
+INFO:root:Reading the file from:~/datasets/files_generated/UX/study1_features_data.csv
+INFO:root:Reduced dimension for 98% variance: (52, 181)
+INFO:root:Reducd dimension: 52
+INFO:root:Best params: {'pca__n_components': 0.98, 'clf__alpha': 0.10481131341546852}
+INFO:root:Best score after fitting the estimator with best params:0.3475797969980419
+INFO:root:****************************************************************************************************
+INFO:root:Reading the file from:~/datasets/files_generated/UX/study1_features_data_out_mahalanobis.csv
+INFO:root:Reduced dimension for 98% variance: (51, 181)
+INFO:root:Reducd dimension: 51
+INFO:root:Best params: {'pca__n_components': 0.98, 'clf__alpha': 0.15264179671752318}
+INFO:root:Best score after fitting the estimator with best params:0.34330502885055464
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:Reading the file from:~/datasets/files_generated/UX/study1_features_data_out_manhattan.csv
+INFO:root:Reduced dimension for 98% variance: (49, 181)
+INFO:root:Reducd dimension: 49
+INFO:root:Best params: {'pca__n_components': 0.98, 'clf__alpha': 0.12648552168552957}
+INFO:root:Best score after fitting the estimator with best params:0.19313435838107876
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Elastic Net Regression****************
+INFO:root:Prediction for PQ
+INFO:root:Reading the file from:~/datasets/files_generated/UX/study1_features_data.csv
+INFO:root:Reduced dimension for 98% variance: (52, 181)
+INFO:root:Reducd dimension: 52
+INFO:root:Best params: {'pca__n_components': 0.98, 'clf__alpha': 0.22229964825261933}
+INFO:root:Best score after fitting the estimator with best params:0.3508185106645076
+INFO:root:****************************************************************************************************
+INFO:root:Reading the file from:~/datasets/files_generated/UX/study1_features_data_out_mahalanobis.csv
+INFO:root:Reduced dimension for 98% variance: (51, 181)
+INFO:root:Reducd dimension: 51
+INFO:root:Best params: {'pca__n_components': 0.98, 'clf__alpha': 0.2682695795279725}
+INFO:root:Best score after fitting the estimator with best params:0.3451962767914763
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:Reading the file from:~/datasets/files_generated/UX/study1_features_data_out_manhattan.csv
+INFO:root:Reduced dimension for 98% variance: (49, 181)
+INFO:root:Reducd dimension: 49
+INFO:root:Best params: {'pca__n_components': 0.98, 'clf__alpha': 0.2682695795279725}
+INFO:root:Best score after fitting the estimator with best params:0.19820105443035912
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Support vector machine****************
+INFO:root:Prediction for PQ
+INFO:root:Reading the file from:~/datasets/files_generated/UX/study1_features_data.csv
+INFO:root:Reduced dimension for 98% variance: (52, 181)
+INFO:root:Reducd dimension: 52
+INFO:root:Best params: {'clf__gamma': 0.004641588833612777, 'pca__n_components': 0.98, 'clf__epsilon': 0.46415888336127786, 'clf__C': 0.774263682681127}
+INFO:root:Best score after fitting the estimator with best params:0.35570378508572564
+INFO:root:****************************************************************************************************
+INFO:root:Reading the file from:~/datasets/files_generated/UX/study1_features_data_out_mahalanobis.csv
+INFO:root:Reduced dimension for 98% variance: (51, 181)
+INFO:root:Reducd dimension: 51
+INFO:root:Best params: {'clf__gamma': 0.001, 'pca__n_components': 0.98, 'clf__epsilon': 0.1291549665014884, 'clf__C': 1.0}
+INFO:root:Best score after fitting the estimator with best params:0.3652112191201981
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:Reading the file from:~/datasets/files_generated/UX/study1_features_data_out_manhattan.csv
+INFO:root:Reduced dimension for 98% variance: (49, 181)
+INFO:root:Reducd dimension: 49
+INFO:root:Best params: {'clf__gamma': 0.001, 'pca__n_components': 0.98, 'clf__epsilon': 0.1291549665014884, 'clf__C': 1.0}
+INFO:root:Best score after fitting the estimator with best params:0.2142428551192431
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Random Forest****************
+INFO:root:Prediction for PQ
+INFO:root:Reading the file from:~/datasets/files_generated/UX/study1_features_data.csv
+INFO:root:Reduced dimension for 98% variance: (52, 181)
+INFO:root:Reducd dimension: 52
+INFO:root:Best params: {'pca__n_components': 0.98, 'clf__min_samples_split': 5, 'clf__n_estimators': 10, 'clf__bootstrap': True, 'clf__min_samples_leaf': 4, 'clf__max_depth': 10}
+INFO:root:Best score after fitting the estimator with best params:0.38165614993349223
+INFO:root:****************************************************************************************************
+INFO:root:Reading the file from:~/datasets/files_generated/UX/study1_features_data_out_mahalanobis.csv
+INFO:root:Reduced dimension for 98% variance: (51, 181)
+INFO:root:Reducd dimension: 51
+INFO:root:Best params: {'pca__n_components': 0.98, 'clf__min_samples_split': 5, 'clf__n_estimators': 60, 'clf__bootstrap': True, 'clf__min_samples_leaf': 4, 'clf__max_depth': 60}
+INFO:root:Best score after fitting the estimator with best params:0.3657463240804272
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:Reading the file from:~/datasets/files_generated/UX/study1_features_data_out_manhattan.csv
+INFO:root:Reduced dimension for 98% variance: (49, 181)
+INFO:root:Reducd dimension: 49
+INFO:root:Best params: {'pca__n_components': 0.98, 'clf__min_samples_split': 2, 'clf__n_estimators': 70, 'clf__bootstrap': True, 'clf__min_samples_leaf': 1, 'clf__max_depth': 90}
+INFO:root:Best score after fitting the estimator with best params:0.18576136950491123
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************

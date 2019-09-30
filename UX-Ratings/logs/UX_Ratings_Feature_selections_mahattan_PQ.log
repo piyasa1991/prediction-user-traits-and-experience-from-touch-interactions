@@ -1,0 +1,12 @@
+INFO:root:Selected outlier technique: mahalanobis | Selected Target: PQ
+INFO:root:Applying recursive feature elimination
+INFO:root:Number of features selected by RFE: 117
+INFO:root:Applying Boruta
+INFO:root:Number of features selected by RFE: 13
+INFO:root:**********Combined*************
+INFO:root:Number of features selected by combined: 11
+INFO:root:**********Training Support vector machines************
+INFO:root:********Applying Lasso Regression****************
+INFO:root:********Applying Elastic Net Regression****************
+INFO:root:********Applying Linear Regression****************
+INFO:root:********Applying MARS****************

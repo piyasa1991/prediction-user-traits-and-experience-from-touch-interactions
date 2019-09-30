@@ -1,0 +1,318 @@
+INFO:root:********Applying MARS****************
+INFO:root:Prediction for PQ
+INFO:root:********Applying MARS****************
+INFO:root:Prediction for PQ
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:********Applying Linear Regression****************
+INFO:root:Prediction for PQ
+INFO:root:Best params: {'clf__normalize': True, 'clf__fit_intercept': True}
+INFO:root:Best score after fitting the estimator with best params:-6.738270758740309
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__normalize': True, 'clf__fit_intercept': True}
+INFO:root:Best score after fitting the estimator with best params:-3.4107430412441624
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__normalize': True, 'clf__fit_intercept': True}
+INFO:root:Best score after fitting the estimator with best params:-4.950966730863475
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__normalize': True, 'clf__fit_intercept': False}
+INFO:root:Best score after fitting the estimator with best params:-17.779842664943533
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__normalize': True, 'clf__fit_intercept': True}
+INFO:root:Best score after fitting the estimator with best params:-8.324720143226001
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:Best params: {'clf__normalize': True, 'clf__fit_intercept': False}
+INFO:root:Best score after fitting the estimator with best params:-19.62462012417415
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__normalize': True, 'clf__fit_intercept': False}
+INFO:root:Best score after fitting the estimator with best params:-7.801472128920085
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__normalize': False, 'clf__fit_intercept': True}
+INFO:root:Best score after fitting the estimator with best params:-7.0545622455302635
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__normalize': True, 'clf__fit_intercept': False}
+INFO:root:Best score after fitting the estimator with best params:-8.289160237727328
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__normalize': True, 'clf__fit_intercept': False}
+INFO:root:Best score after fitting the estimator with best params:-13.566592735240718
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for HQ
+INFO:root:Best params: {'clf__normalize': True, 'clf__fit_intercept': True}
+INFO:root:Best score after fitting the estimator with best params:-28.633488830307314
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__normalize': True, 'clf__fit_intercept': False}
+INFO:root:Best score after fitting the estimator with best params:-8.884115365631033
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__normalize': False, 'clf__fit_intercept': True}
+INFO:root:Best score after fitting the estimator with best params:-9.010829303262323
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__normalize': True, 'clf__fit_intercept': False}
+INFO:root:Best score after fitting the estimator with best params:-24.496414720245216
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__normalize': True, 'clf__fit_intercept': False}
+INFO:root:Best score after fitting the estimator with best params:-18.192561394994385
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Linear regression with stochastic gradient descent****************
+INFO:root:Prediction for PQ
+INFO:root:Best params: {'clf__eta0': 0.001, 'clf__penalty': None, 'clf__max_iter': 50}
+INFO:root:Best score after fitting the estimator with best params:-4.82233623877001e+28
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__eta0': 0.001, 'clf__penalty': None, 'clf__max_iter': 50}
+INFO:root:Best score after fitting the estimator with best params:-1.0443477388298473e+23
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__eta0': 0.001, 'clf__penalty': None, 'clf__max_iter': 100}
+INFO:root:Best score after fitting the estimator with best params:-0.3360210626549773
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__eta0': 0.001, 'clf__penalty': None, 'clf__max_iter': 100}
+INFO:root:Best score after fitting the estimator with best params:-2.7761646525156095e+20
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__eta0': 0.001, 'clf__penalty': None, 'clf__max_iter': 100}
+INFO:root:Best score after fitting the estimator with best params:-4.0054535270964994e+21
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:Best params: {'clf__eta0': 0.001, 'clf__penalty': None, 'clf__max_iter': 50}
+INFO:root:Best score after fitting the estimator with best params:-6.233488675628067e+28
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__eta0': 0.001, 'clf__penalty': None, 'clf__max_iter': 50}
+INFO:root:Best score after fitting the estimator with best params:-9.339526717320817e+22
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__eta0': 0.001, 'clf__penalty': None, 'clf__max_iter': 100}
+INFO:root:Best score after fitting the estimator with best params:-0.4146954253303964
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__eta0': 0.001, 'clf__penalty': None, 'clf__max_iter': 100}
+INFO:root:Best score after fitting the estimator with best params:-3.047570379724278e+20
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__eta0': 0.001, 'clf__penalty': None, 'clf__max_iter': 100}
+INFO:root:Best score after fitting the estimator with best params:-4.534031828032919e+21
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for HQ
+INFO:root:Best params: {'clf__eta0': 0.001, 'clf__penalty': None, 'clf__max_iter': 20}
+INFO:root:Best score after fitting the estimator with best params:-1.7742180478358452e+29
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__eta0': 0.001, 'clf__penalty': None, 'clf__max_iter': 100}
+INFO:root:Best score after fitting the estimator with best params:-1.9284943655522286e+23
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__eta0': 0.001, 'clf__penalty': None, 'clf__max_iter': 100}
+INFO:root:Best score after fitting the estimator with best params:-0.7979405497297214
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__eta0': 0.001, 'clf__penalty': None, 'clf__max_iter': 100}
+INFO:root:Best score after fitting the estimator with best params:-5.378328814857228e+20
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__eta0': 0.001, 'clf__penalty': None, 'clf__max_iter': 100}
+INFO:root:Best score after fitting the estimator with best params:-9.393352843981014e+21
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Lasso Regression****************
+INFO:root:Prediction for PQ
+INFO:root:Best params: {'clf__alpha': 0.10481131341546852}
+INFO:root:Best score after fitting the estimator with best params:0.3041380090950268
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__alpha': 0.10481131341546852}
+INFO:root:Best score after fitting the estimator with best params:0.3598713519075116
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__alpha': 0.10481131341546852}
+INFO:root:Best score after fitting the estimator with best params:0.32739917064814383
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__alpha': 0.05963623316594643}
+INFO:root:Best score after fitting the estimator with best params:0.3319383469046476
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__alpha': 0.08685113737513521}
+INFO:root:Best score after fitting the estimator with best params:0.24216578274327102
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:Best params: {'clf__alpha': 0.15264179671752318}
+INFO:root:Best score after fitting the estimator with best params:0.14305179018683065
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__alpha': 0.08685113737513521}
+INFO:root:Best score after fitting the estimator with best params:0.24466541672022418
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__alpha': 0.15264179671752318}
+INFO:root:Best score after fitting the estimator with best params:0.17001808802257556
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__alpha': 0.2682695795279725}
+INFO:root:Best score after fitting the estimator with best params:0.10581458887752515
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__alpha': 0.15264179671752318}
+INFO:root:Best score after fitting the estimator with best params:0.17195610508306408
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for HQ
+INFO:root:Best params: {'clf__alpha': 0.22229964825261933}
+INFO:root:Best score after fitting the estimator with best params:0.0008637130268320445
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__alpha': 0.10481131341546852}
+INFO:root:Best score after fitting the estimator with best params:0.0015856007184387726
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__alpha': 0.10481131341546852}
+INFO:root:Best score after fitting the estimator with best params:-0.0338107233123804
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__alpha': 0.12648552168552957}
+INFO:root:Best score after fitting the estimator with best params:0.00611077504348561
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__alpha': 0.18420699693267145}
+INFO:root:Best score after fitting the estimator with best params:-0.04041493775889116
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Elastic Net Regression****************
+INFO:root:Prediction for PQ
+INFO:root:Best params: {'clf__alpha': 0.18420699693267145}
+INFO:root:Best score after fitting the estimator with best params:0.29414293985754064
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__alpha': 0.18420699693267145}
+INFO:root:Best score after fitting the estimator with best params:0.36402465943227286
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__alpha': 0.22229964825261933}
+INFO:root:Best score after fitting the estimator with best params:0.3199197917640878
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__alpha': 0.12648552168552957}
+INFO:root:Best score after fitting the estimator with best params:0.3026665187148153
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__alpha': 0.18420699693267145}
+INFO:root:Best score after fitting the estimator with best params:0.22373940943375933
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:Best params: {'clf__alpha': 0.32374575428176433}
+INFO:root:Best score after fitting the estimator with best params:0.13247854979890716
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__alpha': 0.15264179671752318}
+INFO:root:Best score after fitting the estimator with best params:0.24999771359761658
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__alpha': 0.22229964825261933}
+INFO:root:Best score after fitting the estimator with best params:0.17320257373692324
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__alpha': 0.3906939937054613}
+INFO:root:Best score after fitting the estimator with best params:0.09311976011775877
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__alpha': 0.2682695795279725}
+INFO:root:Best score after fitting the estimator with best params:0.1554622454211716
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for HQ
+INFO:root:Best params: {'clf__alpha': 0.47148663634573895}
+INFO:root:Best score after fitting the estimator with best params:0.00018047802909600344
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__alpha': 0.12648552168552957}
+INFO:root:Best score after fitting the estimator with best params:0.016150084779236885
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__alpha': 0.2682695795279725}
+INFO:root:Best score after fitting the estimator with best params:-0.043400321133837516
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__alpha': 0.2682695795279725}
+INFO:root:Best score after fitting the estimator with best params:0.0010546263221324808
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__alpha': 0.3906939937054613}
+INFO:root:Best score after fitting the estimator with best params:-0.041895989319953766
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Support vector machine****************
+INFO:root:Prediction for PQ
+INFO:root:Best params: {'clf__C': 1.0, 'clf__epsilon': 0.1291549665014884, 'clf__gamma': 0.001}
+INFO:root:Best score after fitting the estimator with best params:0.2866345817168212
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__C': 1.0, 'clf__epsilon': 0.1291549665014884, 'clf__gamma': 0.001}
+INFO:root:Best score after fitting the estimator with best params:0.3055855421434662
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__C': 1.0, 'clf__epsilon': 0.2782559402207124, 'clf__gamma': 0.001}
+INFO:root:Best score after fitting the estimator with best params:0.33191850627709896
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__C': 0.774263682681127, 'clf__epsilon': 0.21544346900318834, 'clf__gamma': 0.004641588833612777}
+INFO:root:Best score after fitting the estimator with best params:0.29650219508084813
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__C': 1.0, 'clf__epsilon': 0.1291549665014884, 'clf__gamma': 0.001}
+INFO:root:Best score after fitting the estimator with best params:0.27749914772145207
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:Best params: {'clf__C': 1.0, 'clf__epsilon': 0.1291549665014884, 'clf__gamma': 0.001}
+INFO:root:Best score after fitting the estimator with best params:0.11865456442609142
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__C': 0.774263682681127, 'clf__epsilon': 0.46415888336127786, 'clf__gamma': 0.001}
+INFO:root:Best score after fitting the estimator with best params:0.15115545973797076
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__C': 1.0, 'clf__epsilon': 0.1291549665014884, 'clf__gamma': 0.001}
+INFO:root:Best score after fitting the estimator with best params:0.17759357458915304
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__C': 0.774263682681127, 'clf__epsilon': 0.21544346900318834, 'clf__gamma': 0.004641588833612777}
+INFO:root:Best score after fitting the estimator with best params:0.15342095557437335
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__C': 1.0, 'clf__epsilon': 0.1291549665014884, 'clf__gamma': 0.001}
+INFO:root:Best score after fitting the estimator with best params:0.17232608438137312
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for HQ
+INFO:root:Best params: {'clf__C': 1.0, 'clf__epsilon': 0.35938136638046275, 'clf__gamma': 0.021544346900318832}
+INFO:root:Best score after fitting the estimator with best params:0.02282913281141578
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__C': 1.0, 'clf__epsilon': 0.2782559402207124, 'clf__gamma': 0.001}
+INFO:root:Best score after fitting the estimator with best params:0.03630986660081978
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__C': 0.46415888336127786, 'clf__epsilon': 0.21544346900318834, 'clf__gamma': 0.021544346900318832}
+INFO:root:Best score after fitting the estimator with best params:0.05100711446596944
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__C': 0.774263682681127, 'clf__epsilon': 0.16681005372000587, 'clf__gamma': 0.021544346900318832}
+INFO:root:Best score after fitting the estimator with best params:0.04642735965195339
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__C': 1.0, 'clf__epsilon': 0.35938136638046275, 'clf__gamma': 0.021544346900318832}
+INFO:root:Best score after fitting the estimator with best params:0.03491735486480484
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:********Applying Random Forest****************
+INFO:root:Prediction for PQ
+INFO:root:Best params: {'clf__min_samples_leaf': 1, 'clf__bootstrap': True, 'clf__max_depth': 70, 'clf__min_samples_split': 10, 'clf__n_estimators': 10}
+INFO:root:Best score after fitting the estimator with best params:0.5100980108512397
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__min_samples_leaf': 1, 'clf__bootstrap': True, 'clf__max_depth': 30, 'clf__min_samples_split': 5, 'clf__n_estimators': 100}
+INFO:root:Best score after fitting the estimator with best params:0.49663737773617367
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__min_samples_leaf': 1, 'clf__bootstrap': True, 'clf__max_depth': 90, 'clf__min_samples_split': 2, 'clf__n_estimators': 100}
+INFO:root:Best score after fitting the estimator with best params:0.4839756843447166
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__min_samples_leaf': 4, 'clf__bootstrap': True, 'clf__max_depth': 110, 'clf__min_samples_split': 10, 'clf__n_estimators': 70}
+INFO:root:Best score after fitting the estimator with best params:0.45026378724453525
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__min_samples_leaf': 4, 'clf__bootstrap': True, 'clf__max_depth': 110, 'clf__min_samples_split': 5, 'clf__n_estimators': 90}
+INFO:root:Best score after fitting the estimator with best params:0.46784536951543404
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:Best params: {'clf__min_samples_leaf': 4, 'clf__bootstrap': True, 'clf__max_depth': 60, 'clf__min_samples_split': 5, 'clf__n_estimators': 60}
+INFO:root:Best score after fitting the estimator with best params:0.24218676543304177
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__min_samples_leaf': 1, 'clf__bootstrap': True, 'clf__max_depth': 90, 'clf__min_samples_split': 2, 'clf__n_estimators': 100}
+INFO:root:Best score after fitting the estimator with best params:0.24587552497872245
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__min_samples_leaf': 4, 'clf__bootstrap': True, 'clf__max_depth': 70, 'clf__min_samples_split': 5, 'clf__n_estimators': 40}
+INFO:root:Best score after fitting the estimator with best params:0.25896137851852485
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__min_samples_leaf': 2, 'clf__bootstrap': True, 'clf__max_depth': 50, 'clf__min_samples_split': 2, 'clf__n_estimators': 30}
+INFO:root:Best score after fitting the estimator with best params:0.23565098319716457
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__min_samples_leaf': 2, 'clf__bootstrap': True, 'clf__max_depth': 20, 'clf__min_samples_split': 2, 'clf__n_estimators': 50}
+INFO:root:Best score after fitting the estimator with best params:0.2650970167499443
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for HQ
+INFO:root:Best params: {'clf__min_samples_leaf': 1, 'clf__bootstrap': True, 'clf__max_depth': 90, 'clf__min_samples_split': 2, 'clf__n_estimators': 70}
+INFO:root:Best score after fitting the estimator with best params:0.10880756338404061
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__min_samples_leaf': 4, 'clf__bootstrap': True, 'clf__max_depth': 80, 'clf__min_samples_split': 5, 'clf__n_estimators': 100}
+INFO:root:Best score after fitting the estimator with best params:0.09700380738052813
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__min_samples_leaf': 1, 'clf__bootstrap': True, 'clf__max_depth': 50, 'clf__min_samples_split': 5, 'clf__n_estimators': 60}
+INFO:root:Best score after fitting the estimator with best params:0.06297167354280227
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__min_samples_leaf': 2, 'clf__bootstrap': True, 'clf__max_depth': 90, 'clf__min_samples_split': 2, 'clf__n_estimators': 50}
+INFO:root:Best score after fitting the estimator with best params:0.04756373059602707
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__min_samples_leaf': 1, 'clf__bootstrap': True, 'clf__max_depth': 90, 'clf__min_samples_split': 2, 'clf__n_estimators': 70}
+INFO:root:Best score after fitting the estimator with best params:0.06935542147477895
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************

@@ -1,0 +1,19 @@
+﻿,Target,R-Squared(Validation),Adjusted R-Squared(Validation),RMSE(Validation),Standard Error(Validation),R-Squared(Train),RMSE(Train)
+Linear Regression,PQ,-0.24,-56.32,1.54,0.68,0.89,7.62
+Lasso Regression,PQ,0.3,-31.47,1.16,0.15,0.58,2.01
+Elastic Net Regression,PQ,0.31,-31.08,1.15,0.15,0.55,2.27
+MARS,PQ,0.39,-27.11,1.09,0.25,0.68,2.41
+SVM,PQ,0.35,-29.05,1.11,0.14,0.58,1.7
+Random Forest,PQ,0.47,-23.38,0.99,0.16,0.87,1.41
+Linear Regression,ATT,-1.46,-112.64,1.92,1.99,0.8,22.21
+Lasso Regression,ATT,0.03,-43.79,1.31,0.25,0.34,1.24
+Elastic Net Regression,ATT,0.03,-43.95,1.3,0.31,0.44,1.26
+MARS,ATT,0.03,-43.74,1.26,0.5,0.47,1.89
+SVM,ATT,0.12,-39.48,1.25,0.28,0.51,1.49
+Random Forest,ATT,0.16,-37.79,1.19,0.36,0.81,1.24
+Linear Regression,HQ,-2.09,-141.79,1.86,2.04,0.73,12.36
+Lasso Regression,HQ,-0.17,-53.1,1.2,0.24,0,1.09
+Elastic Net Regression,HQ,-0.17,-53.23,1.2,0.25,0.02,1.08
+MARS,HQ,-0.09,-49.38,1.14,0.57,0.29,1.23
+SVM,HQ,0,-45.13,1.12,0.3,0.74,1
+Random Forest,HQ,-0.01,-45.9,1.11,0.44,0.85,0.98

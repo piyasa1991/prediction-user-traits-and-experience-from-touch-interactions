@@ -1,0 +1,32 @@
+# Ignore folder .ipynb_checkpoints
+.ipynb_checkpoints/
+
+# UX-ratings
+# Ignore folder .ipynb_checkpoints, .RData and .Rhistory for STUDY1 and STUDY2
+UX-Ratings/.RData
+UX-Ratings/.Rhistory
+UX-Ratings/.ipynb_checkpoints/*.ipynb
+UX-Ratings/Tables/.ipynb_checkpoints/*.ipynb
+UX-Ratings/Tables/Residuals/.ipynb_checkpoints/*.ipynb
+UX-Ratings/Generalizability/Train_Study1_Test_Study2/.ipynb_checkpoints/*.ipynb
+UX-Ratings/Generalizability/Train_Study1_Test_Study2/.RData
+UX-Ratings/Generalizability/Train_Study1_Test_Study2/.Rhistory
+UX-Ratings/Generalizability/Train_Study1_Test_Study2/Tables/.ipynb_checkpoints/*.ipynb
+
+# Ignore folder .ipynb_checkpoints, .RData and .Rhistory for generalizability
+UX-Ratings/Generalizability/Train_Study2_Test_Study1/.ipynb_checkpoints/*.ipynb
+UX-Ratings/Generalizability/Train_Study2_Test_Study1/Tables/.ipynb_checkpoints/*.ipynb
+UX-Ratings/Generalizability/Train_Study2_Test_Study1/.RData
+UX-Ratings/Generalizability/Train_Study2_Test_Study1/.Rhistory
+
+# Ignore folder .ipynb_checkpoints, .RData and .Rhistory for STUDY1 and STUDY2
+UX-Ratings/Combined/.ipynb_checkpoints/*.ipynb
+UX-Ratings/Combined/Tables/.ipynb_checkpoints/*.ipynb
+UX-Ratings/Combined/.RData
+UX-Ratings/Combined/.Rhistory
+
+# Personality ratings
+Personality-Ratings/.ipynb_checkpoints/*.ipynb
+Personality-Ratings/Tables/.ipynb_checkpoints/*.ipynb
+Personality-Ratings/.RData
+Personality-Ratings/.Rhistory

@@ -1,0 +1,29 @@
+INFO:root:Selected outlier technique: mahalanobis | Selected Target: PQ
+INFO:root:Applying recursive feature elimination
+INFO:root:Number of features selected by RFE: 41
+INFO:root:Applying Boruta
+INFO:root:Number of features selected by RFE: 2
+INFO:root:**********Combined*************
+INFO:root:Number of features selected by combined: 2
+INFO:root:Selected outlier technique: mahalanobis | Selected Target: PQ
+INFO:root:Applying recursive feature elimination
+INFO:root:Number of features selected by RFE: 41
+INFO:root:Applying Boruta
+INFO:root:Number of features selected by RFE: 3
+INFO:root:**********Combined*************
+INFO:root:Number of features selected by combined: 3
+INFO:root:**********Training Support vector machines************
+INFO:root:********Applying Lasso Regression****************
+INFO:root:********Applying Elastic Net Regression****************
+INFO:root:********Applying KNN****************
+INFO:root:Selected outlier technique: mahalanobis | Selected Target: PQ
+INFO:root:Applying recursive feature elimination
+INFO:root:Number of features selected by RFE: 41
+INFO:root:Applying Boruta
+INFO:root:Number of features selected by RFE: 2
+INFO:root:**********Combined*************
+INFO:root:Number of features selected by combined: 2
+INFO:root:**********Training Support vector machines************
+INFO:root:********Applying Lasso Regression****************
+INFO:root:********Applying Elastic Net Regression****************
+INFO:root:********Applying KNN****************

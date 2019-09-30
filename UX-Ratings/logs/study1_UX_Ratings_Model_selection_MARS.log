@@ -1,0 +1,54 @@
+INFO:root:********Applying MARS****************
+INFO:root:Prediction for PQ
+INFO:root:********Applying MARS****************
+INFO:root:Prediction for PQ
+INFO:root:Best params: {'clf__penalty': 1.0, 'clf__max_degree': 1, 'clf__endspan_alpha': 0.01, 'clf__use_fast': True, 'clf__minspan_alpha': 0.01, 'clf__endspan': 5, 'clf__max_terms': 40}
+INFO:root:Best score after fitting the estimator with best params:-1.2601747410196757
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__penalty': 1.0, 'clf__max_degree': 1, 'clf__endspan_alpha': 0.01, 'clf__use_fast': True, 'clf__minspan_alpha': 0.01, 'clf__endspan': 5, 'clf__max_terms': 40}
+INFO:root:Best score after fitting the estimator with best params:0.02015138993513417
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__penalty': 1.0, 'clf__max_degree': 1, 'clf__endspan_alpha': 0.01, 'clf__use_fast': True, 'clf__minspan_alpha': 0.01, 'clf__endspan': 5, 'clf__max_terms': 40}
+INFO:root:Best score after fitting the estimator with best params:-0.26772338520173683
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__penalty': 1.0, 'clf__max_degree': 1, 'clf__endspan_alpha': 0.01, 'clf__use_fast': True, 'clf__minspan_alpha': 0.01, 'clf__endspan': 5, 'clf__max_terms': 40}
+INFO:root:Best score after fitting the estimator with best params:-0.1026661019452382
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__penalty': 1.0, 'clf__max_degree': 1, 'clf__endspan_alpha': 0.01, 'clf__use_fast': True, 'clf__minspan_alpha': 0.01, 'clf__endspan': 5, 'clf__max_terms': 55}
+INFO:root:Best score after fitting the estimator with best params:-0.8486493841032796
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for ATT
+INFO:root:Best params: {'clf__penalty': 1.0, 'clf__max_degree': 1, 'clf__endspan_alpha': 0.01, 'clf__use_fast': True, 'clf__minspan_alpha': 0.01, 'clf__endspan': 5, 'clf__max_terms': 40}
+INFO:root:Best score after fitting the estimator with best params:-1.1798125626898688
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__penalty': 1.0, 'clf__max_degree': 1, 'clf__endspan_alpha': 0.01, 'clf__use_fast': True, 'clf__minspan_alpha': 0.01, 'clf__endspan': 5, 'clf__max_terms': 40}
+INFO:root:Best score after fitting the estimator with best params:-1.1710424170644276
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__penalty': 1.0, 'clf__max_degree': 1, 'clf__endspan_alpha': 0.01, 'clf__use_fast': True, 'clf__minspan_alpha': 0.01, 'clf__endspan': 5, 'clf__max_terms': 40}
+INFO:root:Best score after fitting the estimator with best params:-2.2523620716114006
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__penalty': 1.0, 'clf__max_degree': 2, 'clf__endspan_alpha': 0.01, 'clf__use_fast': True, 'clf__minspan_alpha': 0.01, 'clf__endspan': 5, 'clf__max_terms': 40}
+INFO:root:Best score after fitting the estimator with best params:-0.9344477757396946
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__penalty': 1.0, 'clf__max_degree': 1, 'clf__endspan_alpha': 0.01, 'clf__use_fast': True, 'clf__minspan_alpha': 0.01, 'clf__endspan': 5, 'clf__max_terms': 40}
+INFO:root:Best score after fitting the estimator with best params:-0.9900092027290164
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
+INFO:root:Prediction for HQ
+INFO:root:Best params: {'clf__penalty': 1.0, 'clf__max_degree': 2, 'clf__endspan_alpha': 0.01, 'clf__use_fast': True, 'clf__minspan_alpha': 0.01, 'clf__endspan': 5, 'clf__max_terms': 40}
+INFO:root:Best score after fitting the estimator with best params:-2.1983382488531364
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__penalty': 1.0, 'clf__max_degree': 1, 'clf__endspan_alpha': 0.01, 'clf__use_fast': True, 'clf__minspan_alpha': 0.01, 'clf__endspan': 5, 'clf__max_terms': 40}
+INFO:root:Best score after fitting the estimator with best params:-1.6647482231300637
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__penalty': 1.0, 'clf__max_degree': 1, 'clf__endspan_alpha': 0.01, 'clf__use_fast': True, 'clf__minspan_alpha': 0.01, 'clf__endspan': 5, 'clf__max_terms': 40}
+INFO:root:Best score after fitting the estimator with best params:-2.255871907217768
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__penalty': 1.0, 'clf__max_degree': 1, 'clf__endspan_alpha': 0.01, 'clf__use_fast': True, 'clf__minspan_alpha': 0.01, 'clf__endspan': 5, 'clf__max_terms': 40}
+INFO:root:Best score after fitting the estimator with best params:-2.6118034927126064
+INFO:root:****************************************************************************************************
+INFO:root:Best params: {'clf__penalty': 1.0, 'clf__max_degree': 3, 'clf__endspan_alpha': 0.01, 'clf__use_fast': True, 'clf__minspan_alpha': 0.01, 'clf__endspan': 5, 'clf__max_terms': 40}
+INFO:root:Best score after fitting the estimator with best params:-2.4825831520337207
+INFO:root:****************************************************************************************************
+INFO:root:****************************************************************************************************
